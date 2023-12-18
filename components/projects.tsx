@@ -53,7 +53,7 @@ const Projects = () => {
               description="A kitchen management web app with collaboration"
               imageUrl="./images/kuzina.png"
             >
-              Glaucoma Detection
+              Glaucoma App
             </ProjectCard>
           </div>
           <div className="flex flex-col">
