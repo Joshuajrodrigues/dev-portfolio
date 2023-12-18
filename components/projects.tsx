@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./projectCard";
 import ProjectControl from "./projectcontrols";
+import Pagination from "./pagination";
 
 const Projects = () => {
   return (
@@ -14,8 +15,9 @@ const Projects = () => {
           Kuzina
         </ProjectCard>
       </div>
-      <div>
+      <div className="flex flex-col">
         <ProjectControl/>
+        <Pagination/>
       </div>
     </section>
   );
