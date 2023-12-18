@@ -20,7 +20,7 @@ export default function Home() {
       </section>
 
       <section className="w-full flex flex-col items-center justify-center">
-        <Marquee items={["Software", "Enginner", "Frontend", "Developer"]} />
+        <Marquee items={["Web", "Developer", "Frontend", "Engineer", "Software","Solutions"]} />
       </section>
       <section className="w-full mt-5">
         <div className="flex justify-between items-center">

@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { createWithEqualityFn } from "zustand/traditional";
 
 export type Color =  "Yellow" | "Orange" | "Green"
-type Rgb = "bg-yellow-500"|"bg-orange-500"|"bg-green-500"
+type Rgb = "bg-yellow-500"|"bg-orange-500"|"bg-green-500" |"bg-black text-white"
 export type Store ={
     theme:Rgb,
     changeTheme:(color:Color)=>void
