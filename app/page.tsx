@@ -44,7 +44,7 @@ export default function Home() {
         </section>
         <section className="w-full flex flex-col justify-center items-center">
           {/* <Accordion question="Blog" answer="test" /> */}
-          <Accordion question="Projects" answer={<Projects/>} />
+          <Accordion question="Hobby Projects" answer={<Projects/>} />
           <Accordion question="About" answer={<About/>} />
           <Accordion question="Contact" answer={<Contact/>} />
         </section>
