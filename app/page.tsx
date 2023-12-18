@@ -1,4 +1,3 @@
-
 import About from "@/components/about";
 import Accordion from "@/components/accordian";
 import Badge from "@/components/badge";
@@ -10,6 +9,7 @@ import Header from "@/components/header";
 import Marquee from "@/components/marquee";
 import Projects from "@/components/projects";
 import Resume from "@/components/resume";
+import { Diamond } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,7 +20,19 @@ export default function Home() {
       </section>
 
       <section className="w-full flex flex-col items-center justify-center">
-        <Marquee items={["Web", "Developer", "Frontend", "Engineer", "Software","Solutions"]} />
+        <Marquee
+          items={[
+            "Web",
+            "Development",
+            "◆",
+            "Frontend",
+            "Engineering",
+            "◆",
+            "Software",
+            "Solutions",
+            "◆",
+          ]}
+        />
       </section>
       <section className="w-full mt-5">
         <div className="flex justify-between items-center">
@@ -44,9 +56,9 @@ export default function Home() {
         </section>
         <section className="w-full flex flex-col justify-center items-center">
           {/* <Accordion question="Blog" answer="test" /> */}
-          <Accordion question="Hobby Projects" answer={<Projects/>} />
-          <Accordion question="About" answer={<About/>} />
-          <Accordion question="Contact" answer={<Contact/>} />
+          <Accordion question="Hobby Projects" answer={<Projects />} />
+          <Accordion question="About" answer={<About />} />
+          <Accordion question="Contact" answer={<Contact />} />
         </section>
       </section>
     </main>

@@ -4,6 +4,7 @@ import Button from "./button";
 import { ArrowRightSquare, ArrowLeftSquare } from "lucide-react";
 const ProjectControl = () => {
   const theme = useTheme((s) => s.theme);
+  
   return (
     <div className="flex flex-col">
       <Button

@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        marquee: "marquee 5s linear infinite",
-        marquee2: "marquee2 5s linear infinite",
+        marquee: "marquee 8s linear infinite",
+        marquee2: "marquee2 8s linear infinite",
       },
       keyframes: {
         marquee: {
