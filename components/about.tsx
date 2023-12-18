@@ -7,12 +7,13 @@ const About = () => {
     <div>
       <section className="flex flex-wrap">
         <Tags>Over 2 years of industry experience</Tags>
-        <Tags>Problem solver</Tags>
         <Tags>Currently working at Teknorix</Tags>
-        <Tags>Contributes to open-source projects</Tags>
-        <Tags>Team player</Tags>
+        <Tags>Computer engineering</Tags>
+        <Tags>Problem solver</Tags>
+        <Tags>Open-source contribution</Tags>
         <Tags>Passionate</Tags>
         <Tags>Positive</Tags>
+        <Tags>Team player</Tags>
       </section>
       <p className="p-2">
         With over 2 years of dedicated experience in frontend engineering and

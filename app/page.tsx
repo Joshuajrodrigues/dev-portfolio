@@ -22,14 +22,11 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center">
         <Marquee
           items={[
-            "Web",
-            "Development",
+            "Web Development",
             "◆",
-            "Frontend",
-            "Engineering",
+            "Frontend Engineering",
             "◆",
-            "Software",
-            "Solutions",
+            "Software Solutions",
             "◆",
           ]}
         />
