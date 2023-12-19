@@ -5,6 +5,8 @@ import Pagination from "./pagination";
 import { useProject } from "@/store/project";
 import Tags from "./tags";
 import ProjectLink from "./projectLinks";
+import Card from "./card";
+import { Scale } from "lucide-react";
 
 const Projects = () => {
   const project = useProject((s) => s.project);
@@ -13,6 +15,19 @@ const Projects = () => {
     case 0:
       return (
         <>
+          <Card
+            className="w-full text-sm bg-white text-black mb-2"
+            heading={
+              <div className="flex items-center ">
+                <Scale color="red" />
+                <p>
+                  These are Joshua's passion projects, his professional work is
+                  proprietary software.
+                </p>
+           
+              </div>
+            }
+          ></Card>
           <section className="w-full flex">
             <div>
               <ProjectCard
@@ -29,11 +44,13 @@ const Projects = () => {
             </div>
           </section>
           <div className="flex flex-wrap">
-            {["Nextjs", "Supabase","Typescript", "TailwindCss", "ShadCn"]!.map((item) => (
-              <Tags key={item} nostyle={true}>
-                {item}
-              </Tags>
-            ))}
+            {["Nextjs", "Supabase", "Typescript", "TailwindCss", "ShadCn"]!.map(
+              (item) => (
+                <Tags key={item} nostyle={true}>
+                  {item}
+                </Tags>
+              )
+            )}
           </div>
         </>
       );
@@ -56,7 +73,7 @@ const Projects = () => {
             </div>
           </section>
           <div className="flex flex-wrap">
-            {["React","Typescript", "Supabase", "ChakraUi"]!.map((item) => (
+            {["React", "Typescript", "Supabase", "ChakraUi"]!.map((item) => (
               <Tags key={item} nostyle={true}>
                 {item}
               </Tags>
@@ -70,7 +87,6 @@ const Projects = () => {
           <section className="w-full flex">
             <div>
               <ProjectCard
-            
                 description="College final year project to use clustering algorithms (fuzzy c strange point) to segment eye image to cup and disk then calculate the cup to disk ratio for glaucoma detection."
                 imageUrl="./images/gla.png"
               >
@@ -84,7 +100,7 @@ const Projects = () => {
             </div>
           </section>
           <div className="flex flex-wrap">
-            {["Nextjs","Zustand", "TailwindCss"]!.map((item) => (
+            {["Nextjs", "Zustand", "TailwindCss"]!.map((item) => (
               <Tags key={item} nostyle={true}>
                 {item}
               </Tags>
@@ -99,7 +115,6 @@ const Projects = () => {
           <section className="w-full flex">
             <div>
               <ProjectCard
-          
                 description="A kitchen management web app with collaboration"
                 imageUrl="./images/kuzina.png"
               >
