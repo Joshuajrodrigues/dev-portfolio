@@ -5,7 +5,7 @@ import Tags from "./tags";
 const About = () => {
   return (
     <div>
-      <section className="flex flex-wrap">
+      <section className="w-full flex flex-wrap">
         <Tags>Over 2 years of industry experience</Tags>
         <Tags>Currently working at Teknorix</Tags>
         <Tags>Computer engineering</Tags>

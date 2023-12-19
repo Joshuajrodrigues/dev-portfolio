@@ -51,7 +51,7 @@ export default function Accordion({ question, answer, isProjects }: Props) {
           showContent ? `h-fit` : "h-0"
         } overflow-hidden rounded-[5px] bg-white font-bold transition-[height] ease-in-out`}
       >
-        <p className="p-5">{answer}</p>
+        <div className="p-5">{answer}</div>
       </div>
     </div>
   );
