@@ -2,6 +2,7 @@ import About from "@/components/about";
 import Accordion from "@/components/accordian";
 import Badge from "@/components/badge";
 import Button from "@/components/button";
+import Career from "@/components/career";
 import ColorPicker from "@/components/colorPicker";
 import Contact from "@/components/contact";
 import Github from "@/components/github";
@@ -62,7 +63,7 @@ export default function Home() {
         <section className="w-full flex flex-col justify-center items-center">
           {/* <Accordion question="Blog" answer="test" /> */}
           <Accordion question="Hobby Projects" answer={<Projects />} />
-          <Accordion question="Career" answer={<About />} />
+          <Accordion question="Career" answer={<Career />} />
           <Accordion question="About" answer={<About />} />
           <Accordion question="Contact" answer={<Contact />} />
         </section>

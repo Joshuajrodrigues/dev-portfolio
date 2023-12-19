@@ -6,35 +6,33 @@ const About = () => {
   return (
     <div>
       <section className="w-full flex flex-wrap">
-        <Tags>Over 2 years of industry experience</Tags>
-        <Tags>Currently working at Teknorix</Tags>
-        <Tags>Computer engineering</Tags>
-        <Tags>Problem solver</Tags>
-        <Tags>Open-source contribution</Tags>
-        <Tags>Passionate</Tags>
-        <Tags>Positive</Tags>
-        <Tags>Team player</Tags>
+        <Tags>Problem Solver</Tags>
+        <Tags>Bookworm</Tags>
+        <Tags>Cinema Enthusiast</Tags>
+        <Tags>Cat person and some dogs</Tags>
       </section>
       <p className="p-2">
-        With over 2 years of dedicated experience in frontend engineering and
-        web development, Joshua is a passionate professional committed to
-        crafting innovative, web-based solutions that address the challenges of
-        everyday life. Currently contributing expertise at Teknorix, Joshua
-        thrives on being a problem solver, with many projects inspired by the
-        quest to find solutions to real-world challenges.
+        Joshua considers himself a problem solver, with many of his projects
+        stemming from a genuine desire to find solutions to challenges he has
+        personally encountered.
       </p>
       <p className="p-2">
-        His commitment to the tech community is evident through regular
-        contributions to open-source projects, sharing knowledge gained from
-        hands-on experience.
+        Beyond the realm of software development, Joshua has a deep appreciation
+        for cinema, particularly relishing the discovery and enjoyment of rare
+        and classic films from around the world. His viewing preferences lean
+        towards works from renowned directors such as Akira Kurosawa and Wong
+        Kar-wai.
       </p>
       <p className="p-2">
-        Joshua brings a unique blend of technical expertise, problem-solving
-        prowess, and a passion for creativity to every project. Through a
-        combination of professional achievements and personal interests, Joshua
-        paints a comprehensive picture of a dedicated frontend engineer,
-        continuously seeking to make a positive impact in the digital and
-        real-world spaces.
+        Devoting a significant amount of his time to reading, Joshua thoroughly
+        enjoys this pastime, exploring genres like thrillers, science fiction,
+        and classic literature. Currently, he is engrossed in the literary
+        masterpiece, The Brothers Karamazov.
+      </p>
+      <p className="p-2">
+        In addition to his professional and intellectual pursuits, Joshua has a
+        soft spot for cats 😸, although he is a proud owner of a dog 🐶 whom he
+        also holds in high regard.
       </p>
     </div>
   );
