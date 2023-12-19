@@ -9,7 +9,22 @@ import Header from "@/components/header";
 import Marquee from "@/components/marquee";
 import Projects from "@/components/projects";
 import Resume from "@/components/resume";
-import { Diamond } from "lucide-react";
+
+
+export type Marquee = {
+  key: number;
+  value: string;
+}[]
+let marqueeItems:Marquee =[
+  {"key": 0, "value": "Web Development"},
+  {"key": 1, "value": "◆"},
+  {"key": 2, "value": "Frontend Engineering"},
+  {"key": 3, "value": "◆"},
+  {"key": 4, "value": "Software Solutions"},
+  {"key": 5, "value": "◆"}
+]
+
+
 
 export default function Home() {
   return (
@@ -21,14 +36,7 @@ export default function Home() {
 
       <section className="w-full flex flex-col items-center justify-center">
         <Marquee
-          items={[
-            "Web Development",
-            "◆",
-            "Frontend Engineering",
-            "◆",
-            "Software Solutions",
-            "◆",
-          ]}
+          items={marqueeItems}
         />
       </section>
       <section className="w-full mt-5">
@@ -54,6 +62,7 @@ export default function Home() {
         <section className="w-full flex flex-col justify-center items-center">
           {/* <Accordion question="Blog" answer="test" /> */}
           <Accordion question="Hobby Projects" answer={<Projects />} />
+          <Accordion question="Career" answer={<About />} />
           <Accordion question="About" answer={<About />} />
           <Accordion question="Contact" answer={<Contact />} />
         </section>
