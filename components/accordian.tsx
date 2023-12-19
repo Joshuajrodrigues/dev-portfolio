@@ -6,13 +6,14 @@ import { useTheme } from "@/store/theme";
 import { useProject } from "@/store/project";
 
 type Props = {
+  open?:boolean
   question: string;
   answer: ReactNode;
   isProjects?: false;
 };
 
-export default function Accordion({ question, answer, isProjects }: Props) {
-  const [showContent, setShowContent] = useState(false);
+export default function Accordion({ question, answer, isProjects,open=false }: Props) {
+  const [showContent, setShowContent] = useState(open);
   const [contentHeight, setContentHeight] = useState("0px");
   const contentRef = useRef<HTMLDivElement>(null);
   const theme = useTheme((s) => s.theme);

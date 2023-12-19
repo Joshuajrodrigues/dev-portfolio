@@ -8,8 +8,8 @@ const About = () => {
       <section className="w-full flex flex-wrap">
         <Tags>Problem Solver</Tags>
         <Tags>Bookworm</Tags>
-        <Tags>Cinema Enthusiast</Tags>
-        <Tags>Cat person and some dogs</Tags>
+        <Tags>Cinema enthusiast</Tags>
+        <Tags>Cat and dog person</Tags>
       </section>
       <p className="p-2">
         Joshua considers himself a problem solver, with many of his projects

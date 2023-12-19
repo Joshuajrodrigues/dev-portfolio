@@ -8,10 +8,10 @@ const Career = () => {
         <Tags>Over 2 years of industry experience</Tags>
         <Tags>Currently working at Teknorix</Tags>
         <Tags>Computer engineering degree</Tags>
-        <Tags>Mentorship of Interns</Tags>
-        <Tags>Code Reviews</Tags>
-        <Tags>Active Team Engagement</Tags>
-        <Tags>Interviewing Potential Candidates</Tags>
+        <Tags>Mentorship of interns</Tags>
+        <Tags>Code reviews</Tags>
+        <Tags>Active team engagement</Tags>
+        <Tags>Interviewing potential candidates</Tags>
         <Tags>Worked on CRM, Ticketing Systems, Document Recognition, Knowledge Base, News & Publications Management, E-commerce</Tags>
       </section>
       <p className="p-2">

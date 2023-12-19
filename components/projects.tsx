@@ -4,6 +4,7 @@ import ProjectControl from "./projectcontrols";
 import Pagination from "./pagination";
 import { useProject } from "@/store/project";
 import Tags from "./tags";
+import ProjectLink from "./projectLinks";
 
 const Projects = () => {
   const project = useProject((s) => s.project);
@@ -24,6 +25,7 @@ const Projects = () => {
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
+              <ProjectLink visit="" code="" />
             </div>
           </section>
           <div className="flex flex-wrap">
@@ -50,6 +52,7 @@ const Projects = () => {
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
+              <ProjectLink visit="" code="" />
             </div>
           </section>
           <div className="flex flex-wrap">
@@ -77,6 +80,7 @@ const Projects = () => {
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
+              <ProjectLink visit="" code="" />
             </div>
           </section>
           <div className="flex flex-wrap">
@@ -105,6 +109,7 @@ const Projects = () => {
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
+              <ProjectLink visit="" code="" />
             </div>
           </section>
           <div className="flex flex-wrap">

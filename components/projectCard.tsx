@@ -2,6 +2,7 @@
 
 import { useTheme } from "@/store/theme";
 import Tags from "./tags";
+import Link from "next/link";
 
 type Props = {
   imageUrl: string;
@@ -26,17 +27,13 @@ export default function ProjectCard({
         <figcaption className="border-t-2 border-black p-4 flex justify-between items-center">
           {children}{" "}
           <small>
-            <a>
-              <u>Visit</u>
-            </a>{" "}
-            <a>
-              <u>Code</u>
-            </a>
+            <u>
+              <Link href={""}>Read more</Link>
+            </u>
           </small>
         </figcaption>
       </figure>
       <p className="m-2">{description}</p>
-   
     </>
   );
 }
