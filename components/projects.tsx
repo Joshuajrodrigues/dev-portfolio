@@ -15,19 +15,7 @@ const Projects = () => {
     case 0:
       return (
         <>
-          <Card
-            className="w-full text-sm bg-white text-black mb-2"
-            heading={
-              <div className="flex items-center ">
-                <Scale color="red" />
-                <p>
-                  These are Joshua's passion projects, his professional work is
-                  proprietary software.
-                </p>
-           
-              </div>
-            }
-          ></Card>
+  
           <section className="w-full flex">
             <div>
               <ProjectCard
