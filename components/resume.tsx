@@ -7,13 +7,13 @@ export default function Resume() {
   return (
     <motion.div
       animate={{
-        y: [1, 3, 5, 3, 1, -3, -5, -3, 1],
+        y: [1, 3, 5, 3, 1, -3, -5, -3],
       }}
       transition={{
-        duration: 0.5,
-        ease: "anticipate",
+        duration: 1,
+        ease: "linear",
         repeat: Infinity,
-        repeatDelay: 1,
+        repeatDelay: 0,
       }}
     >
       <Button

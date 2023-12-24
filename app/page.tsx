@@ -63,7 +63,7 @@ export default function Home() {
         <section className="w-full flex flex-col justify-center items-center">
           {/* <Accordion question="Blog" answer="test" /> */}
           <Accordion open={true} question="Hobby Projects" answer={<Projects />} />
-          <Accordion question="Career" answer={<Career />} />
+
           <Accordion question="About" answer={<About />} />
           <Accordion question="Contact" answer={<Contact />} />
         </section>
