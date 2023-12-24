@@ -7,6 +7,7 @@ import ColorPicker from "@/components/colorPicker";
 import Contact from "@/components/contact";
 import Github from "@/components/github";
 import Header from "@/components/header";
+import Intro from "@/components/intro";
 import Marquee from "@/components/marquee";
 import Projects from "@/components/projects";
 import Resume from "@/components/resume";
@@ -45,21 +46,10 @@ export default function Home() {
           <Resume />
           <Github />
         </div>
-
         <section className="flex flex-wrap py-5">
-          <Badge content="Javascript" />
-          <Badge content="TypeScript" />
-          <Badge content="React" />
-          <Badge content="NextJs" />
-          <Badge content="Redux" />
-          <Badge content="Zustand" />
-          <Badge content="Jest" />
-          <Badge content="AntDesign" />
-          <Badge content="TailwindCss" />
-          <Badge content="MaterialUI" />
-          <Badge content="SCSS/LESS" />
-          <Badge content="Webpack" />
+        <Intro/>
         </section>
+ 
         <section className="w-full flex flex-col justify-center items-center">
           {/* <Accordion question="Blog" answer="test" /> */}
           <Accordion open={true} question="Hobby Projects" answer={<Projects />} />
