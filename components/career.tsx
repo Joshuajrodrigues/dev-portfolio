@@ -26,22 +26,23 @@ const Career = () => {
           </a>
         </p>
         <p>
-          <ul className=" list-disc p-2">
+          <ul className="list-disc p-2">
             <li className="mb-2">
-              Incharge of development, maintainence and shipping code to
-              production for client websites primarily using React and SCSS.
+              In charge of development, maintenance, and shipping code to
+              production for client websites, primarily using React and SCSS.
             </li>
             <li className="mb-2">
-              Contributing to maintaining and expanding internal ui component
-              library in based on Ant Design, design system using Typescript.
+              Contributing to maintaining and expanding the internal UI
+              component library based on Ant Design, a design system using
+              TypeScript.
             </li>
             <li className="mb-2">
-              Helping train interns and monitored their capstone projects as
-              well as onboarding new joinees.
+              Helping train interns and monitoring their capstone projects, as
+              well as onboarding new joiners.
             </li>
             <li className="mb-2">
               Providing rapid development and technical solutions according to
-              stakeholder buisness requirments.
+              stakeholder business requirements.
             </li>
           </ul>
         </p>

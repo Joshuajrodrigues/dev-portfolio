@@ -8,12 +8,18 @@ const About = () => {
   return (
     <div>
       <section className="w-full flex flex-wrap">
-        <Tags>Completed computer engineering in 2021</Tags>
-        <Tags>Bookworm, currently reading Prophet Song by Paul Lynch</Tags>
-        <Tags>Cinema enthusiast, current favourite The Mist</Tags>
-        <Tags>Loves to cook</Tags>
-        <Tags>Daily evening runs</Tags>
-        <Tags>Cat person but owns a dog and 💖 him too.</Tags>
+        <ul className="list-disc p-2">
+          <li className="mb-2">🎓Completed computer engineering in 2021.</li>
+          <li className="mb-2">
+           📖 Bookworm, currently reading Prophet Song by Paul Lynch.
+          </li>
+          <li className="mb-2">
+           🎬 Cinema enthusiast, current favourite The Mist.
+          </li>
+          <li className="mb-2">🧑‍🍳 Loves to cook.</li>
+          <li className="mb-2">🏃‍♂️ Daily evening runs.</li>
+          <li className="mb-2">😺 Cat person but currently owns a 🐶 dog and 💖 him too.</li>
+        </ul>
       </section>
       <h3 className="p-2 text-bold">
         {" "}
