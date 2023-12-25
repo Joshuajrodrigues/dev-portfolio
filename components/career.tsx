@@ -17,6 +17,8 @@ const Career = () => {
               <img
                 src="https://www.teknorix.com/wp-content/uploads/2019/01/teknorix-logomark.svg"
                 alt="Teknorix logo"
+                width={24}
+                height={24}
                 className="w-6 mx-1 inline"
               />
               <u>Teknorix Pvt Ltd </u>
