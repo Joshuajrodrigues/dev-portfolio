@@ -5,4 +5,5 @@
 @font-face {
   font-family: "ONESLICE";
   src: url("../public/fonts/MolendRegular.otf");
+  font-display: swap;
 }
