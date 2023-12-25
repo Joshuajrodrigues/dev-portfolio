@@ -4,6 +4,7 @@ import { useTheme } from "@/store/theme";
 import Tags from "./tags";
 import Link from "next/link";
 import Image from "next/image";
+import { Book } from "lucide-react";
 
 type Props = {
   imageUrl: string;
@@ -29,7 +30,7 @@ export default function ProjectCard({
           {children}{" "}
           <small>
             <u>
-              <Link href={link}>Read more</Link>
+              <Link className="flex items-center justify-center" href={link}> Read more <Book className="inline ml-1" size={12} /></Link>
             </u>
           </small>
         </figcaption>

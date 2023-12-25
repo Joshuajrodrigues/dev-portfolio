@@ -20,7 +20,7 @@ const Contact = () => {
       <a
         className="flex items-center p-2"
         target="_blank"
-        href="https://linkedin.com/in/joshua-rodrigues-1655091b2"
+        href="https://www.instagram.com/joshuajrodrigues?utm_source=qr&igsh=d2xhbmphaW03ZGZ2"
       >
         <Instagram className="mr-5" /> Follow me on Instagram
       </a>
