@@ -25,11 +25,8 @@ let marqueeItems: Marquee = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center p-5 text-black">
-      <Header />
-      <section className="w-full flex justify-end">
-        <ColorPicker items={["Yellow", "Orange", "Green"]} />
-      </section>
+    <>
+    
 
       <section className="w-full flex flex-col items-center justify-center">
         <Marquee items={marqueeItems} />
@@ -55,6 +52,6 @@ export default function Home() {
           <Accordion question="Contact" answer={<Contact />} />
         </section>
       </section>
-    </main>
+    </>
   );
 }
