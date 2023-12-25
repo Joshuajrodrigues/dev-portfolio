@@ -3,6 +3,7 @@
 import { useTheme } from "@/store/theme";
 import Tags from "./tags";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   imageUrl: string;
@@ -23,7 +24,7 @@ export default function ProjectCard({
       <figure
         className={`w-[250px] overflow-hidden rounded-md border-2 border-black ${theme} font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
       >
-        <img className="w-full h-24 object-fill" src={imageUrl} alt="image" />
+        <Image className="w-full h-24 object-fill" width={100} height={100} src={imageUrl} alt="image" />
         <figcaption className="border-t-2 border-black p-4 flex justify-between items-center">
           {children}{" "}
           <small>

@@ -20,7 +20,7 @@ const Projects = () => {
             <div>
               <ProjectCard
                 description="A kitchen management web app to store kitchen stock, recipies and allow family colaboration for shopping."
-                imageUrl="./images/kuzina.png"
+                imageUrl="/images/kuzina.png"
                 link="/project/kuzina"
               >
                 Kuzina
@@ -50,7 +50,7 @@ const Projects = () => {
             <div>
               <ProjectCard
                 description="A congitive behavioral therapy journaling app, for challenging negative thoughts and emotions."
-                imageUrl="./images/kognitive.png"
+                imageUrl="/images/kognitive.png"
                 link="/project/kognitive"
               >
                 Kognitive
@@ -78,7 +78,7 @@ const Projects = () => {
             <div>
               <ProjectCard
                 description="College final year project to use clustering algorithms (fuzzy c strange point) to segment eye image to cup and disk then calculate the cup to disk ratio for glaucoma detection."
-                imageUrl="./images/gla.png"
+                imageUrl="/images/gla.png"
                 link="/project/final-year-project"
               >
                 Glaucoma App
@@ -107,7 +107,7 @@ const Projects = () => {
             <div>
               <ProjectCard
                 description="A kitchen management web app with collaboration"
-                imageUrl="./images/kuzina.png"
+                imageUrl="/images/kuzina.png"
                 link="/project/kuzina"
               >
                 Kuzina
