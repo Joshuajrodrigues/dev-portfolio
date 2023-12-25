@@ -7,6 +7,7 @@ import Tags from "./tags";
 import ProjectLink from "./projectLinks";
 import Card from "./card";
 import { Scale } from "lucide-react";
+import Link from "next/link";
 
 const Projects = () => {
   const project = useProject((s) => s.project);
@@ -15,7 +16,6 @@ const Projects = () => {
     case 0:
       return (
         <>
-  
           <section className="w-full flex">
             <div>
               <ProjectCard
@@ -23,13 +23,18 @@ const Projects = () => {
                 imageUrl="/images/kuzina.png"
                 link="/project/kuzina"
               >
-                Kuzina
+                <Link className=" underline" href={"/project/kuzina"}>
+                  Kuzina
+                </Link>
               </ProjectCard>
             </div>
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
-              <ProjectLink visit="https://kuzina.vercel.app/" code="https://github.com/Joshuajrodrigues/kuzina" />
+              <ProjectLink
+                visit="https://kuzina.vercel.app/"
+                code="https://github.com/Joshuajrodrigues/kuzina"
+              />
             </div>
           </section>
           <div className="flex flex-wrap">
@@ -53,13 +58,18 @@ const Projects = () => {
                 imageUrl="/images/kognitive.png"
                 link="/project/kognitive"
               >
-                Kognitive
+                <Link className=" underline" href={"/project/kognitive"}>
+                  Kognitive
+                </Link>
               </ProjectCard>
             </div>
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
-              <ProjectLink visit="https://kognitive.vercel.app" code="https://github.com/Joshuajrodrigues/cbtjournal" />
+              <ProjectLink
+                visit="https://kognitive.vercel.app"
+                code="https://github.com/Joshuajrodrigues/cbtjournal"
+              />
             </div>
           </section>
           <div className="flex flex-wrap">
@@ -81,13 +91,21 @@ const Projects = () => {
                 imageUrl="/images/gla.png"
                 link="/project/final-year-project"
               >
-                Glaucoma App
+                <Link
+                  className=" underline"
+                  href={"/project/final-year-project"}
+                >
+                  Glaucoma App
+                </Link>
               </ProjectCard>
             </div>
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
-              <ProjectLink visit="https://glaucoma-detector.vercel.app/" code="https://github.com/Joshuajrodrigues/glaucoma-detector" />
+              <ProjectLink
+                visit="https://glaucoma-detector.vercel.app/"
+                code="https://github.com/Joshuajrodrigues/glaucoma-detector"
+              />
             </div>
           </section>
           <div className="flex flex-wrap">
@@ -110,13 +128,18 @@ const Projects = () => {
                 imageUrl="/images/kuzina.png"
                 link="/project/kuzina"
               >
-                Kuzina
+                <Link className=" underline" href={"/project/kuzina"}>
+                  Kuzina
+                </Link>
               </ProjectCard>
             </div>
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
-              <ProjectLink visit="https://kuzina.vercel.app/" code="https://github.com/Joshuajrodrigues/kuzina" />
+              <ProjectLink
+                visit="https://kuzina.vercel.app/"
+                code="https://github.com/Joshuajrodrigues/kuzina"
+              />
             </div>
           </section>
           <div className="flex flex-wrap">

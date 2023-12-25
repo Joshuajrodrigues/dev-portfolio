@@ -5,9 +5,9 @@ import { ArrowBigLeftIcon } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 export const metadata: Metadata = {
-  title: "Kuzina Project | Joshua Rodrigues",
-  description: "Kitchen management app",
-};
+    title: "Kognitive Project | Joshua Rodrigues",
+    description: "CBT jpurnaling app",
+  };
 const page = () => {
   return (
     <section className="w-full flex flex-col justify-center items-center">

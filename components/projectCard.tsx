@@ -29,7 +29,7 @@ export default function ProjectCard({
           {children}{" "}
           <small>
             <u>
-              <Link className="flex items-center justify-center" href={link}> Read more <Book className="inline ml-1" size={12} /></Link>
+              {/* <Link className="flex items-center justify-center" href={link}> Read more <Book className="inline ml-1" size={12} /></Link> */}
             </u>
           </small>
         </figcaption>
