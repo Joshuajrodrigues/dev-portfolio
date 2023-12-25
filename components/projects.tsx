@@ -28,7 +28,7 @@ const Projects = () => {
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
-              <ProjectLink visit="" code="" />
+              <ProjectLink visit="https://kuzina.vercel.app/" code="https://github.com/Joshuajrodrigues/kuzina" />
             </div>
           </section>
           <div className="flex flex-wrap">
@@ -57,7 +57,7 @@ const Projects = () => {
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
-              <ProjectLink visit="" code="" />
+              <ProjectLink visit="https://kognitive.vercel.app" code="https://github.com/Joshuajrodrigues/cbtjournal" />
             </div>
           </section>
           <div className="flex flex-wrap">
@@ -84,7 +84,7 @@ const Projects = () => {
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
-              <ProjectLink visit="" code="" />
+              <ProjectLink visit="https://glaucoma-detector.vercel.app/" code="https://github.com/Joshuajrodrigues/glaucoma-detector" />
             </div>
           </section>
           <div className="flex flex-wrap">
