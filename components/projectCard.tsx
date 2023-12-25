@@ -1,10 +1,9 @@
 "use client";
 
 import { useTheme } from "@/store/theme";
-import Tags from "./tags";
-import Link from "next/link";
-import Image from "next/image";
 import { Book } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   imageUrl: string;

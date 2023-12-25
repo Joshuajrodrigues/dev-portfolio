@@ -42,7 +42,6 @@ export default function Home() {
         <section className="flex flex-wrap pt-5">
           <Intro />
         </section>
-        
 
         <section className="w-full flex flex-col justify-center items-center">
           {/* <Accordion question="Blog" answer="test" /> */}
@@ -51,7 +50,7 @@ export default function Home() {
             question="Featured Projects"
             answer={<Projects />}
           />
-          <Accordion open={true} question="Career" answer={<Career/>} />
+          <Accordion open={true} question="Career" answer={<Career />} />
           <Accordion question="About" answer={<About />} />
           <Accordion question="Contact" answer={<Contact />} />
         </section>

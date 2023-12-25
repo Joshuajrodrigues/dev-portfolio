@@ -12,7 +12,7 @@ const Career = () => {
             href="https://www.teknorix.com/"
             target="_blank"
           >
-            <p className=" w-full">
+            <span className=" w-full">
               Currently working with the lovely people at
               <img
                 src="https://www.teknorix.com/wp-content/uploads/2019/01/teknorix-logomark.svg"
@@ -22,10 +22,10 @@ const Career = () => {
               <u>Teknorix Pvt Ltd </u>
               <ExternalLink size={12} className="mr-1 inline text-xs" />
               since 2021 as a software developer.
-            </p>
+            </span>
           </a>
         </p>
-        <p>
+        <div>
           <ul className="list-disc p-2">
             <li className="mb-2">
               In charge of development, maintenance, and shipping code to
@@ -45,7 +45,7 @@ const Career = () => {
               stakeholder business requirements.
             </li>
           </ul>
-        </p>
+        </div>
       </section>
     </div>
   );
