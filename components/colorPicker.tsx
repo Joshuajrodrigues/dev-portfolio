@@ -25,7 +25,7 @@ export default function ColorPicker({ items }: { items: Color[] }) {
         } else if (item === "Orange") {
           bg = "bg-orange-500";
         } else if (item === "Green") {
-          bg = "bg-green-500";
+          bg = "bg-green-400";
         }
 
         return (
@@ -36,6 +36,7 @@ export default function ColorPicker({ items }: { items: Color[] }) {
             }}
             className="my-2 flex items-center"
             role="radio"
+            aria-label={item +" theme"}
             aria-checked={theme===bg&& isChecked}
             key={item}
           >

@@ -18,6 +18,7 @@ export default function Resume() {
     >
       <Button
         className="text-white bg-black"
+        ariaLabel="Click to download resume"
         onClick={() => {
           let a = document.createElement("a");
           a.href = "/resume/JoshuaRodrigues_resume_2023.pdf";

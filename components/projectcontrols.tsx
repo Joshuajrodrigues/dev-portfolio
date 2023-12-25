@@ -13,6 +13,7 @@ const ProjectControl = () => {
         className={
           "w-16 p-1 m-1 h-16 flex items-center justify-center" + " " + theme
         }
+        ariaLabel="Click for next project"
         onClick={() => {
             if(project<2){
                 changeProject(project+1)
@@ -28,6 +29,7 @@ const ProjectControl = () => {
         className={
           "w-16 p-1 m-1 h-16 flex items-center justify-center" + " " + theme
         }
+        ariaLabel="Click for previous project"
         onClick={() => {
             if(project>0){
                 changeProject(project-1)
