@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 type Props = {
   heading: ReactNode;
-  paragraph?: string;
+  paragraph?: ReactNode;
   className?:string
 };
 

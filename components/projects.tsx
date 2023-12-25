@@ -21,6 +21,7 @@ const Projects = () => {
               <ProjectCard
                 description="A kitchen management web app to store kitchen stock, recipies and allow family colaboration for shopping."
                 imageUrl="./images/kuzina.png"
+                link="/project/kuzina"
               >
                 Kuzina
               </ProjectCard>
@@ -50,6 +51,7 @@ const Projects = () => {
               <ProjectCard
                 description="A congitive behavioral therapy journaling app, for challenging negative thoughts and emotions."
                 imageUrl="./images/kognitive.png"
+                link="/project/kognitive"
               >
                 Kognitive
               </ProjectCard>
@@ -77,6 +79,7 @@ const Projects = () => {
               <ProjectCard
                 description="College final year project to use clustering algorithms (fuzzy c strange point) to segment eye image to cup and disk then calculate the cup to disk ratio for glaucoma detection."
                 imageUrl="./images/gla.png"
+                link="/project/final-year-project"
               >
                 Glaucoma App
               </ProjectCard>
@@ -105,6 +108,7 @@ const Projects = () => {
               <ProjectCard
                 description="A kitchen management web app with collaboration"
                 imageUrl="./images/kuzina.png"
+                link="/project/kuzina"
               >
                 Kuzina
               </ProjectCard>
@@ -112,7 +116,7 @@ const Projects = () => {
             <div className="flex flex-col">
               <ProjectControl />
               <Pagination />
-              <ProjectLink visit="" code="" />
+              <ProjectLink visit="https://kuzina.vercel.app/" code="https://github.com/Joshuajrodrigues/kuzina" />
             </div>
           </section>
           <div className="flex flex-wrap">

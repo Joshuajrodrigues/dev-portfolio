@@ -7,13 +7,13 @@ import Link from "next/link";
 type Props = {
   imageUrl: string;
   children: React.ReactNode;
-
+  link:string;
   description: string;
 };
 
 export default function ProjectCard({
   imageUrl,
-
+  link,
   description,
   children,
 }: Props) {
@@ -28,7 +28,7 @@ export default function ProjectCard({
           {children}{" "}
           <small>
             <u>
-              <Link href={""}>Read more</Link>
+              <Link href={link}>Read more</Link>
             </u>
           </small>
         </figcaption>
