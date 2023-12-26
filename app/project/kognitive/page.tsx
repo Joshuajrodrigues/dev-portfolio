@@ -1,30 +1,30 @@
 import Card from "@/components/card";
 import ImageCard from "@/components/imageCard";
+import ProjectLink from "@/components/projectLinks";
 import Tags from "@/components/tags";
 import { ArrowBigLeftIcon } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 export const metadata: Metadata = {
-    title: "Kognitive Project | Joshua Rodrigues",
-    description: "CBT jpurnaling app",
-  };
+  title: "Kognitive Project | Joshua Rodrigues",
+  description: "CBT jpurnaling app",
+};
 const page = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center">
-      <section className="w-full flex justify-start mb-3">
+    <section className="mx-2 w-full flex flex-col justify-center items-center">
+      <section className="w-full flex justify-between items-center mb-3">
         <Link
-          className="flex cursor-pointer items-center justify-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
+          className=" flex cursor-pointer items-center justify-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
           href={"/"}
         >
           <ArrowBigLeftIcon /> Back
         </Link>
-
-        {/* <Link
-          className="flex cursor-pointer items-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
-          href={"/"}
-        >
-          Next
-        </Link> */}
+        <span className="">
+          <ProjectLink
+            visit="https://kognitive.vercel.app"
+            code="https://github.com/Joshuajrodrigues/cbtjournal"
+          />
+        </span>
       </section>
       <Tags>
         <h2 className="text-2xl text-center">Kognitive - CBT Journaling</h2>
