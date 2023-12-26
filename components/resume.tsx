@@ -18,7 +18,7 @@ export default function Resume() {
       }}
     >
       <Button
-        className="text-white bg-black w-full flex items-center justify-center "
+        className="text-white bg-black w-full  flex items-center justify-center "
         ariaLabel="Click to download resume"
         onClick={() => {
           let a = document.createElement("a");
