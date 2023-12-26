@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 export default function Resume() {
   return (
     <motion.div
+      className="w-full"
       animate={{
         y: [1, 2, 3, 2, 1, -2, -3, -2],
       }}
@@ -17,7 +18,7 @@ export default function Resume() {
       }}
     >
       <Button
-        className="text-white bg-black"
+        className="text-white bg-black w-full flex items-center justify-center "
         ariaLabel="Click to download resume"
         onClick={() => {
           let a = document.createElement("a");
@@ -26,7 +27,7 @@ export default function Resume() {
           a.click();
         }}
       >
-        <span className="flex text-lg font-bolder">
+        <span className=" flex text-lg font-bolder">
           Resume <Download className={`ml-2 `} />{" "}
         </span>
       </Button>
