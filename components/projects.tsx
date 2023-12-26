@@ -1,13 +1,6 @@
 "use client";
-import ProjectCard from "./projectCard";
-import ProjectControl from "./projectcontrols";
-import Pagination from "./pagination";
 import { useProject } from "@/store/project";
-import Tags from "./tags";
-import ProjectLink from "./projectLinks";
-import Card from "./card";
-import { Scale } from "lucide-react";
-import Link from "next/link";
+import { ProjectSection } from "./projectSection";
 
 const Projects = () => {
   const project = useProject((s) => s.project);
@@ -16,139 +9,58 @@ const Projects = () => {
     case 0:
       return (
         <>
-          <section className="w-full flex">
-            <div>
-              <ProjectCard
-                description="A kitchen management web app to store kitchen stock, recipies and allow family colaboration for shopping."
-                imageUrl="/images/kuzina.png"
-                link="/project/kuzina"
-              >
-                <Link className=" underline" href={"/project/kuzina"}>
-                  Kuzina
-                </Link>
-              </ProjectCard>
-            </div>
-            <div className="flex flex-col">
-              <ProjectControl />
-              <Pagination />
-              <ProjectLink
-                visit="https://kuzina.vercel.app/"
-                code="https://github.com/Joshuajrodrigues/kuzina"
-              />
-            </div>
-          </section>
-          <div className="flex flex-wrap">
-            {["Nextjs", "Supabase", "Typescript", "TailwindCss", "ShadCn"]!.map(
-              (item) => (
-                <Tags key={item} nostyle={true}>
-                  {item}
-                </Tags>
-              )
-            )}
-          </div>
+          <ProjectSection
+            projectDesp="A kitchen management web app to store kitchen stock, recipies and allow family colaboration for shopping."
+            projectImage="/images/kuzina.png"
+            projectlink="/project/kuzina"
+            projectName="Kuzina"
+            tags={["Nextjs", "Supabase", "Typescript", "TailwindCss", "ShadCn"]}
+            visit="https://kuzina.vercel.app/"
+            git="https://github.com/Joshuajrodrigues/kuzina"
+          />
         </>
       );
     case 1:
       return (
         <>
-          <section className="w-full flex">
-            <div>
-              <ProjectCard
-                description="A congitive behavioral therapy journaling app, for challenging negative thoughts and emotions."
-                imageUrl="/images/kognitive.png"
-                link="/project/kognitive"
-              >
-                <Link className=" underline" href={"/project/kognitive"}>
-                  Kognitive
-                </Link>
-              </ProjectCard>
-            </div>
-            <div className="flex flex-col">
-              <ProjectControl />
-              <Pagination />
-              <ProjectLink
-                visit="https://kognitive.vercel.app"
-                code="https://github.com/Joshuajrodrigues/cbtjournal"
-              />
-            </div>
-          </section>
-          <div className="flex flex-wrap">
-            {["React", "Typescript", "Supabase", "ChakraUi"]!.map((item) => (
-              <Tags key={item} nostyle={true}>
-                {item}
-              </Tags>
-            ))}
-          </div>
+          <ProjectSection
+            projectDesp="A congitive behavioral therapy journaling app, for challenging negative thoughts and emotions."
+            projectImage="/images/kognitive.png"
+            projectlink="/project/kognitive"
+            projectName="Kognitive"
+            tags={["React", "Typescript", "Supabase", "ChakraUi"]}
+            visit="https://kognitive.vercel.app"
+            git="https://github.com/Joshuajrodrigues/cbtjournal"
+          />
         </>
       );
     case 2:
       return (
         <>
-          <section className="w-full flex">
-            <div>
-              <ProjectCard
-                description="College final year project to use clustering algorithms (fuzzy c strange point) to segment eye image to cup and disk then calculate the cup to disk ratio for glaucoma detection."
-                imageUrl="/images/gla.png"
-                link="/project/final-year-project"
-              >
-                <Link
-                  className=" underline"
-                  href={"/project/final-year-project"}
-                >
-                  Glaucoma App
-                </Link>
-              </ProjectCard>
-            </div>
-            <div className="flex flex-col">
-              <ProjectControl />
-              <Pagination />
-              <ProjectLink
-                visit="https://glaucoma-detector.vercel.app/"
-                code="https://github.com/Joshuajrodrigues/glaucoma-detector"
-              />
-            </div>
-          </section>
-          <div className="flex flex-wrap">
-            {["Nextjs", "Zustand", "TailwindCss"]!.map((item) => (
-              <Tags key={item} nostyle={true}>
-                {item}
-              </Tags>
-            ))}
-          </div>
+          <ProjectSection
+            projectDesp="College final year project to use clustering algorithms (fuzzy c strange point) to segment eye image to cup and disk then calculate the cup to disk ratio for glaucoma detection."
+            projectImage="/images/gla.png"
+            projectlink="/project/final-year-project"
+            projectName="  Glaucoma App"
+            tags={["Nextjs", "Zustand", "TailwindCss"]}
+            visit="https://glaucoma-detector.vercel.app/"
+            git="https://github.com/Joshuajrodrigues/glaucoma-detector"
+          />
         </>
       );
 
     default:
       return (
         <>
-          <section className="w-full flex">
-            <div>
-              <ProjectCard
-                description="A kitchen management web app with collaboration"
-                imageUrl="/images/kuzina.png"
-                link="/project/kuzina"
-              >
-                <Link className=" underline" href={"/project/kuzina"}>
-                  Kuzina
-                </Link>
-              </ProjectCard>
-            </div>
-            <div className="flex flex-col">
-              <ProjectControl />
-              <Pagination />
-              <ProjectLink
-                visit="https://kuzina.vercel.app/"
-                code="https://github.com/Joshuajrodrigues/kuzina"
-              />
-            </div>
-          </section>
-          <div className="flex flex-wrap">
-            {["Nextjs", "Supabase", "TailwindCss"]!.map((item) => (
-              <Tags key={item} nostyle={true}>
-                {item}
-              </Tags>
-            ))}
-          </div>
+          <ProjectSection
+            projectDesp="A kitchen management web app to store kitchen stock, recipies and allow family colaboration for shopping."
+            projectImage="/images/kuzina.png"
+            projectlink="/project/kuzina"
+            projectName="Kuzina"
+            tags={["Nextjs", "Supabase", "Typescript", "TailwindCss", "ShadCn"]}
+            visit="https://kuzina.vercel.app/"
+            git="https://github.com/Joshuajrodrigues/kuzina"
+          />
         </>
       );
   }
