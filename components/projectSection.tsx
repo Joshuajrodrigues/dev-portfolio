@@ -18,8 +18,8 @@ type props = {
 
 export const ProjectSection = (props: props) => {
   return (
-    <section className="w-full  flex flex-col sm:flex-row justify-center items-center sm:items-start ">
-      <div>
+    <section className="w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start ">
+      <div className="sm:w-64">
         <div>
           <ProjectCard
             description={props.projectDesp}

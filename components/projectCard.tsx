@@ -39,7 +39,7 @@ export default function ProjectCard({
           </Link>
         </figcaption>
       </figure>
-      <p className="m-2">{description}</p>
+      <p className="w-full m-2">{description}</p>
     </>
   );
 }
