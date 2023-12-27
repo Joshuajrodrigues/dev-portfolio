@@ -19,7 +19,7 @@ export default function Card({ heading, paragraph,className }: Props) {
       </div>
       {paragraph && (
         <div className="p-4">
-          <p>{paragraph}</p>
+          <>{paragraph}</>
         </div>
       )}
     </div>

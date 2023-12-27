@@ -2,6 +2,7 @@ import Card from "@/components/card";
 import ImageCard from "@/components/imageCard";
 import ProjectLink from "@/components/projectLinks";
 import Tags from "@/components/tags";
+import Video from "@/components/video";
 import { ArrowBigLeftIcon } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -100,8 +101,8 @@ const page = () => {
                     content. This looked cool and was also very challenging to
                     build.
                   </span>
-                  <ImageCard imageUrl="/kuzina/table.png">Table</ImageCard>
                 </p>
+                  <Video imageUrl="/kuzina/cool.mp4">Table</Video>
               </li>
               <li>
                 <strong>Authentication:</strong> Auth was and is very
@@ -133,7 +134,8 @@ const page = () => {
                   fills out the form for you. You also have break on comma and
                   numbers as shown above.
                 </p>
-                <ImageCard imageUrl="/kuzina/add.png">Fast fill</ImageCard>
+                <ImageCard imageUrl="/kuzina/add1.png">Fast fill add</ImageCard>
+                <ImageCard imageUrl="/kuzina/add2.png">Fast fill result</ImageCard>
               </li>
             </ol>
           </>
