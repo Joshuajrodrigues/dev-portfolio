@@ -27,7 +27,7 @@ export const ProjectSection = (props: props) => {
             link={props.projectlink}
             text={props.projectName}
           />
-          <p className="w-full m-2 md:text-lg">{props.projectDesp}</p>
+          <p className="w-full m-2 md:text-lg lg:text-xl">{props.projectDesp}</p>
         </div>
         <div className="flex flex-wrap">
           {props.tags!.map((item) => (

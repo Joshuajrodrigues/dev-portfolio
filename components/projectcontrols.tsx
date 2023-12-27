@@ -8,10 +8,12 @@ const ProjectControl = () => {
   const changeProject = useProject((s) => s.changeProject);
   const project = useProject((s) => s.project);
   return (
-    <div className="flex sm:flex-col">
+    <div className="flex sm:flex-col lg:text-lg">
       <Button
         className={
-          "w-16 md:w-32 lg:w-64 p-1 m-1 h-16 flex items-center justify-center" + " " + theme
+          "w-16 md:w-32 lg:w-64 p-1 m-1 h-16 flex items-center justify-center" +
+          " " +
+          theme
         }
         ariaLabel="Click for previous project"
         onClick={() => {
@@ -22,11 +24,13 @@ const ProjectControl = () => {
           }
         }}
       >
-        <ArrowLeftSquare  />
+        <ArrowLeftSquare className=" md:mr-3 " /> Prev
       </Button>
       <Button
         className={
-          "w-16 md:w-32 lg:w-64 p-1 m-1 lg:mt-3 h-16 flex items-center justify-center" + " " + theme
+          "w-16 md:w-32 lg:w-64 p-1 m-1 lg:mt-3 h-16 flex items-center justify-center" +
+          " " +
+          theme
         }
         ariaLabel="Click for next project"
         onClick={() => {
@@ -37,7 +41,7 @@ const ProjectControl = () => {
           }
         }}
       >
-        <ArrowRightSquare />
+        Next <ArrowRightSquare className=" md:ml-3 " />
       </Button>
     </div>
   );

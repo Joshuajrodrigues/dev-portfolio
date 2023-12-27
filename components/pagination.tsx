@@ -28,7 +28,7 @@ const Pagination = () => {
 
     default:
       return (
-        <div className="flex mt-2">
+        <div className="flex mt-2 ">
           <CircleDot /> <Dot /> <Dot />
         </div>
       );
