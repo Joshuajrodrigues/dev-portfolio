@@ -2,13 +2,13 @@ import { MailIcon, Linkedin, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-start md:text-lg md:p-2 ">
+    <div className="flex flex-col text-sm sm:text-md justify-start md:text-lg lg:text-xl md:p-2 ">
       <a
         className="flex items-center p-2"
         target="_blank"
         href="mailto:joshuarodriguesdev@gmail.com"
       >
-        <MailIcon className="mr-5" />  joshuarodriguesdev@gmail.com
+        <MailIcon className="mr-5" />  Email me
       </a>
       <a
         className="flex items-center p-2"

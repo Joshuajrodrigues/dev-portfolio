@@ -32,7 +32,7 @@ export default function Home() {
         <Marquee items={marqueeItems} />
       </section>
       <section className="w-full mt-5">
-        <div className=" flex flex-col sm:flex-row justify-between items-center">
+        <div className=" flex flex-col sm:flex-row justify-between lg:justify-evenly items-center">
           <Resume />
           <Github />
         </div>

@@ -29,7 +29,7 @@ export default function Accordion({ question, answer, isProjects,open=false }: P
 
   return (
     <div
-      className={`w-full my-5 rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
+      className={`w-full my-5  rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
     >
       <button
         role="button"
@@ -50,7 +50,7 @@ export default function Accordion({ question, answer, isProjects,open=false }: P
         ref={contentRef}
         className={` ${
           showContent ? `h-fit` : "h-0"
-        } overflow-hidden rounded-[5px] bg-white font-bold transition-[height] ease-in-out`}
+        } overflow-hidden rounded-[5px]  bg-white font-bold transition-[height] ease-in-out`}
       >
         <div className="p-5">{answer}</div>
       </div>

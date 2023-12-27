@@ -6,7 +6,7 @@ import Badge from "./badge";
 
 const About = () => {
   return (
-    <div className="md:p-2 md:text-lg">
+    <div className="md:p-2 md:text-lg lg:text-xl lg:p-2">
       <section className="w-full flex flex-wrap ">
         <ul className="list-disc p-2">
           <li className="mb-2">🎓Completed computer engineering in 2021.</li>
@@ -27,7 +27,7 @@ const About = () => {
         {" "}
         <u>Tech stack:</u>{" "}
       </h3>
-      <section className="flex flex-wrap ">
+      <section className="flex flex-wrap lg:w-2/3">
         <Badge content="HTML/CSS" />
         <Badge content="Javascript" />
         <Badge content="TypeScript" />
