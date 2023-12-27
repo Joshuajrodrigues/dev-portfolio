@@ -2,6 +2,9 @@
 
 import { useTheme } from "@/store/theme";
 import { useState } from "react";
+import Button from "./button";
+import Resume from "./resume";
+import { Download, MailIcon } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,21 +15,34 @@ const Navbar = () => {
           <div className=" font-oneslice flex flex-col">Portfolio.ByJosh </div>
 
           <div className="hidden md:flex md:items-center">
-            <a href="#feat" className="text-gray-800 text-sm font-semibold  mr-4">
+            <a
+              href="#feat"
+              className="text-gray-800 text-sm font-semibold  mr-4"
+            >
               Featured Projects
             </a>
-            <a href="#career" className="text-gray-800 text-sm font-semibold  mr-4">
+            <a
+              href="#career"
+              className="text-gray-800 text-sm font-semibold  mr-4"
+            >
               Career
             </a>
-            <a href="#about" className="text-gray-800 text-sm font-semibold  mr-4">
+            <a
+              href="#about"
+              className="text-gray-800 text-sm font-semibold  mr-4"
+            >
               About me
             </a>
             <a href="#contact" className="text-gray-800 text-sm font-semibold ">
               Contact
             </a>
+            
           </div>
 
-          <button onClick={()=>setMenuOpen(!menuOpen)} className="md:hidden cursor-pointer">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden cursor-pointer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6 text-black"
@@ -42,19 +58,53 @@ const Navbar = () => {
         {menuOpen && (
           <div className="block md:hidden bg-white border-t-2 py-2">
             <div className="flex flex-col">
-              <a href="#feat" className="text-gray-800 text-sm font-semibold  mb-1">
+              <a
+                href="#feat"
+                className="text-gray-800 text-md font-semibold  mb-2"
+              >
                 Featured Projects
               </a>
-              <a href="#career" className="text-gray-800 text-sm font-semibold  mb-1">
+              <a
+                href="#career"
+                className="text-gray-800 text-md font-semibold  mb-2"
+              >
                 Career
               </a>
-              <a href="#about" className="text-gray-800 text-sm font-semibold  mb-1">
+              <a
+                href="#about"
+                className="text-gray-800 text-md font-semibold  mb-2"
+              >
                 About
               </a>
-              <a href="#contact" className="text-gray-800 text-sm font-semibold  mb-1">
+              <a
+                href="#contact"
+                className="text-gray-800 text-md font-semibold  mb-2"
+              >
                 Contact
               </a>
-              <div className="flex justify-between items-center border-t-2 pt-2"></div>
+              <div className="flex justify-between items-center border-t-2 pt-2">
+                <a
+                  target="_blank"
+                  href="mailto:joshuarodriguesdev@gmail.com"
+                  className=" cursor-pointer  rounded-md border-2 border-black  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none text-black bg-white w-32 font-bold lg:w-80 flex items-center justify-center "
+                >
+                  Email me <MailIcon className="ml-2" />
+                </a>
+                <Button
+                  className="text-black bg-white w-32 h-8 flex items-center justify-center "
+                  ariaLabel="Click to download resume"
+                  onClick={() => {
+                    let a = document.createElement("a");
+                    a.href = "/resume/JoshuaRodrigues_resume_2023.pdf";
+                    a.target = "_blank";
+                    a.click();
+                  }}
+                >
+                  <span className=" flex text-lg font-bolder">
+                    Resume <Download className={`ml-2 `} />{" "}
+                  </span>
+                </Button>
+              </div>
             </div>
           </div>
         )}
