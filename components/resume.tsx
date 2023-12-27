@@ -22,7 +22,7 @@ export default function Resume() {
         ariaLabel="Click to download resume"
         onClick={() => {
           let a = document.createElement("a");
-          a.href = "/resume/JoshuaRodrigues_resume_2023.pdf";
+          a.href = "/resume/JoshuaRodrigues-resume-2024-25.pdf";
           a.target = "_blank";
           a.click();
         }}
