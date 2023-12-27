@@ -4,6 +4,7 @@ import { Download, MailIcon } from "lucide-react";
 import { useState } from "react";
 import Button from "./button";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,11 @@ const Navbar = () => {
     <div className="bg-white shadow fixed w-full top-0 z-10 ">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className=" font-oneslice flex flex-col">Portfolio </div>
+          <div className=" font-oneslice flex flex-col">
+            <Link href="/">
+            Portfolio
+            </Link>
+             </div>
 
           <div className="hidden md:flex md:items-center">
             <a
