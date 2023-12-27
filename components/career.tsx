@@ -1,6 +1,7 @@
-import React from "react";
-import Tags from "./tags";
-import { ExternalLink } from "lucide-react";
+"use client";
+
+import { Download, ExternalLink } from "lucide-react";
+import Button from "./button";
 
 const Career = () => {
   return (
@@ -30,21 +31,43 @@ const Career = () => {
         <div className=" md:text-lg lg:text-xl ">
           <ul className="list-disc p-2 lg:p-4">
             <li className="mb-2 lg:mb-4">
-              In charge of development, maintenance, and shipping code to
-              production for client websites, primarily using React and SCSS.
+              Led development, maintenance, and deployment of ReactJS, NextJS,
+              Typescript, and LESS/SASS code for client websites.
             </li>
             <li className="mb-2 lg:mb-4">
-              Contributing to maintaining and expanding the internal UI
-              component library based on Ant Design, a design system using
-              TypeScript.
+              Managed various projects, including a feature-rich CRM, an
+              expanded Design System Monorepo, and improvements to News and
+              Publications and Knowledgebase systems.
             </li>
             <li className="mb-2 lg:mb-4">
-              Helping train interns and monitoring their capstone projects, as
-              well as onboarding new joiners.
+              Provided stability and updates to a Grants and Reimbursement
+              System, Catalog Dashboard, and Document Recognition System.
             </li>
             <li className="mb-2 lg:mb-4">
-              Providing rapid development and technical solutions according to
-              stakeholder business requirements.
+              Mentored interns, onboarded team members, and maintained coding
+              standards through code reviews and pair programming.
+            </li>
+            <li className="mb-2 lg:mb-4">
+              Contributed to open-source projects, addressing bugs, and
+              expanding features for company benefit.
+            </li>
+            <li className="mb-2 lg:mb-4">
+              Do check out the{" "}
+              <Button
+                ariaLabel="Click to download resume"
+                onClick={() => {
+                  let a = document.createElement("a");
+                  a.href = "/resume/JoshuaRodrigues-resume-2024-25.pdf";
+                  a.target = "_blank";
+                  a.click();
+                }}
+                className="text-gray-800 inline p-1 text-sm  font-semibold "
+              >
+                <span className="flex justify-center items-center">
+                  Resume <Download className={`ml-1 `} size={12} />
+                </span>
+              </Button>{" "}
+              for more info.
             </li>
           </ul>
         </div>
