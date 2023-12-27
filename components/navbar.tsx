@@ -1,10 +1,8 @@
 "use client";
 
-import { useTheme } from "@/store/theme";
+import { Download, MailIcon } from "lucide-react";
 import { useState } from "react";
 import Button from "./button";
-import Resume from "./resume";
-import { Download, MailIcon } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,14 +10,14 @@ const Navbar = () => {
     <div className="bg-white shadow fixed w-full top-0 z-10 ">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className=" font-oneslice flex flex-col">Portfolio.ByJosh </div>
+          <div className=" font-oneslice flex flex-col">Portfolio </div>
 
           <div className="hidden md:flex md:items-center">
             <a
               href="#feat"
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
-              Featured Projects
+              Featured projects
             </a>
             <a
               href="#career"
@@ -33,10 +31,33 @@ const Navbar = () => {
             >
               About me
             </a>
-            <a href="#contact" className="text-gray-800 text-sm font-semibold ">
+
+            <a
+              href="#contact"
+              className="text-gray-800 text-sm font-semibold  mr-4"
+            >
               Contact
             </a>
-            
+            <span className=" mr-4 text-gray-500 ">|</span>
+            <a
+              className="cursor-pointer rounded-md border-2 border-black  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none  bg-white w-18    mr-4 text-gray-800 p-1 text-sm flex justify-center items-center font-semibold "
+              target="_blank"
+              href="mailto:joshuarodriguesdev@gmail.com"
+            >
+              Email me <MailIcon size={12} className="ml-1" />
+            </a>
+            <Button
+              ariaLabel="Click to download resume"
+              onClick={() => {
+                let a = document.createElement("a");
+                a.href = "/resume/JoshuaRodrigues_resume_2023.pdf";
+                a.target = "_blank";
+                a.click();
+              }}
+              className="text-gray-800 p-1 text-sm flex justify-center items-center font-semibold "
+            >
+              Resume <Download className={`ml-1 `} size={12} />
+            </Button>
           </div>
 
           <button
@@ -62,7 +83,7 @@ const Navbar = () => {
                 href="#feat"
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
-                Featured Projects
+                Featured projects
               </a>
               <a
                 href="#career"
@@ -82,7 +103,7 @@ const Navbar = () => {
               >
                 Contact
               </a>
-              <div className="flex justify-between items-center border-t-2 pt-2">
+              <div className="flex justify-between items-center border-t-2 py-2">
                 <a
                   target="_blank"
                   href="mailto:joshuarodriguesdev@gmail.com"
