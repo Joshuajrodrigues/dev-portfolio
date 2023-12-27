@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="flex flex-col items-center justify-center p-5 text-black">
+        <main className="flex flex-col items-center justify-center p-5 md:m-5 text-black">
           <Header />
           <section className="w-full flex justify-end">
             <ColorPicker items={["Yellow", "Orange", "Green"]} />
