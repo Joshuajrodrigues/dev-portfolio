@@ -28,6 +28,7 @@ const config: Config = {
       animation: {
         marquee: "marquee 8s linear infinite",
         marquee2: "marquee2 8s linear infinite",
+        wiggle: 'wiggle 1s ease-in-out infinite',
       },
       keyframes: {
         marquee: {
@@ -38,6 +39,10 @@ const config: Config = {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
       },
       fontFamily: {
         oneslice: ["ONESLICE", "timesnewroman"],

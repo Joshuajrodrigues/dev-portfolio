@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useRef, useState } from "react";
-import { PlusSquare } from "lucide-react";
+import { MinusSquare, PlusSquare } from "lucide-react";
 import { useTheme } from "@/store/theme";
 import { useProject } from "@/store/project";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
@@ -30,7 +30,7 @@ export default function Accordion({
   const theme = useTheme((s) => s.theme);
   const changeProject = useProject((s) => s.changeProject);
   useEffect(() => {
-  //  console.log("pathname", window.location.hash);
+    //  console.log("pathname", window.location.hash);
     if (window.location.hash === hash) {
       setShowContent(true);
     }
@@ -50,10 +50,18 @@ export default function Accordion({
         }}
       >
         {question}
-        <PlusSquare
-          style={{ transform: `rotate(${showContent ? "45deg" : "0"})` }}
-          className="ml-4 min-h-[24px] min-w-[24px] transition-transform ease-in-out"
-        />
+        {!showContent && (
+          <PlusSquare
+            style={{ transform: `rotate(${showContent ? "45deg" : "0"})` }}
+            className="ml-4 min-h-[24px] min-w-[24px] transition-transform ease-in-out"
+          />
+        )}
+        {showContent && (
+          <MinusSquare
+
+            className="ml-4 min-h-[24px] min-w-[24px] transition-transform ease-in-out"
+          />
+        )}
       </button>
       <div
         ref={contentRef}
