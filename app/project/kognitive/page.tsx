@@ -59,6 +59,9 @@ const page = () => {
               health.
             </p>
             <ImageCard imageUrl={"/kognitive/dash.png"}>Dashboard</ImageCard>
+            <ImageCard imageUrl={"/kognitive/how.png"}>
+              How was your day ?
+            </ImageCard>
           </>
         }
       />
@@ -121,10 +124,8 @@ const page = () => {
                     write a step, that's okay. The app stays out of your way and
                     neutral to make sure the user can focus on themselves.
                   </span>
-                  <ImageCard imageUrl="/kognitive/example.png">
-                    Example
-                  </ImageCard>
                 </p>
+                <ImageCard imageUrl="/kognitive/example.png">Example</ImageCard>
               </li>
               <li>
                 <strong>Data Privacy and Security:</strong> Safeguarding

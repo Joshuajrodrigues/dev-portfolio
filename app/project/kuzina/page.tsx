@@ -59,6 +59,7 @@ const page = () => {
             </p>
             <ImageCard imageUrl={"/kuzina/dash.png"}>Dashboard</ImageCard>
             <ImageCard imageUrl={"/kuzina/pantry.png"}>Pantry</ImageCard>
+            <ImageCard imageUrl={"/kuzina/res.png"}>Recipes</ImageCard>
           </>
         }
       />

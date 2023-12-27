@@ -25,7 +25,7 @@ const Projects = () => {
         <>
           <ProjectSection
             projectDesp="A congitive behavioral therapy journaling app, for challenging negative thoughts and emotions."
-            projectImage="/images/kognitive.png"
+            projectImage="/kognitive/test.png"
             projectlink="/project/kognitive"
             projectName="Kognitive"
             tags={["React", "Typescript", "Supabase", "ChakraUi"]}
