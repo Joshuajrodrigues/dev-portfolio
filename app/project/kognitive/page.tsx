@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 const page = () => {
   return (
-    <section className="mx-2 w-full flex flex-col justify-center items-center">
+    <section className="mx-2 w-full flex flex-col justify-center items-center lg:text-xl">
       <section className="w-full flex justify-between items-center mb-3">
         <Link
           className=" flex cursor-pointer items-center justify-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
@@ -58,10 +58,12 @@ const page = () => {
               recognize patterns and apply CBT techniques for better mental
               health.
             </p>
+            <div className="flex flex-col flex-wrap md:flex-row md:items-baseline md:justify-around">
             <ImageCard imageUrl={"/kognitive/dash.png"}>Dashboard</ImageCard>
             <ImageCard imageUrl={"/kognitive/how.png"}>
               How was your day ?
             </ImageCard>
+            </div>
           </>
         }
       />
@@ -125,7 +127,9 @@ const page = () => {
                     neutral to make sure the user can focus on themselves.
                   </span>
                 </p>
+                <div className="flex flex-col flex-wrap md:flex-row md:items-baseline md:justify-around">
                 <ImageCard imageUrl="/kognitive/example.png">Example</ImageCard>
+                </div>
               </li>
               <li>
                 <strong>Data Privacy and Security:</strong> Safeguarding

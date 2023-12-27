@@ -6,26 +6,26 @@ import { ArrowBigLeftIcon, ExternalLink } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 export const metadata: Metadata = {
-    title: "Capstone Project | Joshua Rodrigues",
-    description: "Glaucoma detection",
-  };
+  title: "Capstone Project | Joshua Rodrigues",
+  description: "Glaucoma detection",
+};
 const page = () => {
   return (
-    <section className="mx-2 w-full flex flex-col justify-center items-center">
-    <section className="w-full flex justify-between items-center mb-3">
-      <Link
-        className=" flex cursor-pointer items-center justify-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
-        href={"/"}
-      >
-        <ArrowBigLeftIcon /> Back
-      </Link>
-      <span className="">
-        <ProjectLink
-          visit="https://glaucoma-detector.vercel.app/"
-          code="https://github.com/Joshuajrodrigues/glaucoma-detector"
-        />
-      </span>
-    </section>
+    <section className="mx-2 w-full flex flex-col justify-center items-center lg:text-xl">
+      <section className="w-full flex justify-between items-center mb-3">
+        <Link
+          className=" flex cursor-pointer items-center justify-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
+          href={"/"}
+        >
+          <ArrowBigLeftIcon /> Back
+        </Link>
+        <span className="">
+          <ProjectLink
+            visit="https://glaucoma-detector.vercel.app/"
+            code="https://github.com/Joshuajrodrigues/glaucoma-detector"
+          />
+        </span>
+      </section>
       <Tags>
         <h2 className="text-2xl text-center">
           Glaucoma detection using clustering algorithms - Capstone Project
@@ -103,9 +103,10 @@ const page = () => {
                   users can manually adjust to obtain more accurate area
                   measurements.
                 </p>
-                <ImageCard imageUrl="/gd/cup.png">Cup</ImageCard>
-                <ImageCard imageUrl="/gd/disk.png">Disk</ImageCard>
-            
+                <div className="flex flex-col flex-wrap md:flex-row md:items-baseline md:justify-around">
+                  <ImageCard imageUrl="/gd/cup.png">Cup</ImageCard>
+                  <ImageCard imageUrl="/gd/disk.png">Disk</ImageCard>
+                </div>
               </li>
               <li>
                 <strong>Eye Fundus Images:</strong> Issues arose with the

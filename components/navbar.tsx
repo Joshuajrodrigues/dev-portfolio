@@ -3,9 +3,11 @@
 import { Download, MailIcon } from "lucide-react";
 import { useState } from "react";
 import Button from "./button";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter()
   return (
     <div className="bg-white shadow fixed w-full top-0 z-10 ">
       <div className="container mx-auto px-4">
@@ -15,18 +17,21 @@ const Navbar = () => {
           <div className="hidden md:flex md:items-center">
             <a
               href="#feat"
+              onClick={()=>router.push('/#feat')}
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
               Featured projects
             </a>
             <a
               href="#career"
+              onClick={()=>router.push('/#career')}
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
               Career
             </a>
             <a
               href="#about"
+              onClick={()=>router.push('/#about')}
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
               About me
@@ -34,6 +39,7 @@ const Navbar = () => {
 
             <a
               href="#contact"
+              onClick={()=>router.push('/#contact')}
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
               Contact
@@ -81,24 +87,28 @@ const Navbar = () => {
             <div className="flex flex-col">
               <a
                 href="#feat"
+                onClick={()=>router.push('/#feat')}
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
                 Featured projects
               </a>
               <a
                 href="#career"
+                onClick={()=>router.push('/#career')}
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
                 Career
               </a>
               <a
                 href="#about"
+                onClick={()=>router.push('/#about')}
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
                 About
               </a>
               <a
                 href="#contact"
+                onClick={()=>router.push('/#contact')}
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
                 Contact
@@ -107,7 +117,7 @@ const Navbar = () => {
                 <a
                   target="_blank"
                   href="mailto:joshuarodriguesdev@gmail.com"
-                  className=" cursor-pointer  rounded-md border-2 border-black  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none text-black bg-white w-32 font-bold lg:w-80 flex items-center justify-center "
+                  className=" font-extrabold cursor-pointer  rounded-md border-2 border-black  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none text-black bg-white w-32  lg:w-80 flex items-center justify-center "
                 >
                   Email me <MailIcon className="ml-2" />
                 </a>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 const page = () => {
   return (
-    <section className="mx-2 w-full flex flex-col justify-center items-center">
+    <section className="mx-2 w-full flex flex-col justify-center items-center lg:text-xl">
       <section className="w-full flex justify-between items-center mb-3">
         <Link
           className=" flex cursor-pointer items-center justify-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
@@ -57,9 +57,11 @@ const page = () => {
               members regarding what needs to be purchased and what has already
               been purchased.
             </p>
-            <ImageCard imageUrl={"/kuzina/dash.png"}>Dashboard</ImageCard>
-            <ImageCard imageUrl={"/kuzina/pantry.png"}>Pantry</ImageCard>
-            <ImageCard imageUrl={"/kuzina/res.png"}>Recipes</ImageCard>
+            <div className="flex flex-col flex-wrap md:flex-row md:items-baseline md:justify-around">
+              <ImageCard imageUrl={"/kuzina/dash.png"}>Dashboard</ImageCard>
+              <ImageCard imageUrl={"/kuzina/pantry.png"}>Pantry</ImageCard>
+              <ImageCard imageUrl={"/kuzina/res.png"}>Recipes</ImageCard>
+            </div>
           </>
         }
       />
@@ -103,7 +105,9 @@ const page = () => {
                     build.
                   </span>
                 </p>
-                  <Video imageUrl="/kuzina/cool.mp4">Table</Video>
+                <div className="flex flex-col flex-wrap md:flex-row md:items-baseline md:justify-around">
+                <Video imageUrl="/kuzina/cool.mp4">Table</Video>
+                </div>
               </li>
               <li>
                 <strong>Authentication:</strong> Auth was and is very
@@ -135,8 +139,14 @@ const page = () => {
                   fills out the form for you. You also have break on comma and
                   numbers as shown above.
                 </p>
-                <ImageCard imageUrl="/kuzina/add1.png">Fast fill add</ImageCard>
-                <ImageCard imageUrl="/kuzina/add2.png">Fast fill result</ImageCard>
+                <div className="flex flex-col flex-wrap md:flex-row md:items-baseline md:justify-around">
+                  <ImageCard imageUrl="/kuzina/add1.png">
+                    Fast fill add
+                  </ImageCard>
+                  <ImageCard imageUrl="/kuzina/add2.png">
+                    Fast fill result
+                  </ImageCard>
+                </div>
               </li>
             </ol>
           </>
