@@ -4,28 +4,37 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 import { PlusSquare } from "lucide-react";
 import { useTheme } from "@/store/theme";
 import { useProject } from "@/store/project";
+import { useParams, usePathname, useSearchParams } from "next/navigation";
 
 type Props = {
-  open?:boolean
+  open?: boolean;
   question: string;
   answer: ReactNode;
   isProjects?: false;
+  hash?: string;
 };
 
-export default function Accordion({ question, answer, isProjects,open=false }: Props) {
+export default function Accordion({
+  question,
+  answer,
+  isProjects,
+  open = false,
+  hash,
+}: Props) {
   const [showContent, setShowContent] = useState(open);
   const [contentHeight, setContentHeight] = useState("0px");
   const contentRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const params = useParams();
   const theme = useTheme((s) => s.theme);
   const changeProject = useProject((s) => s.changeProject);
   useEffect(() => {
-    if (contentRef.current) {
-      if (isProjects) {
-        changeProject(0);
-      }
-      setContentHeight(`${contentRef.current.scrollHeight}px`);
+  //  console.log("pathname", window.location.hash);
+    if (window.location.hash === hash) {
+      setShowContent(true);
     }
-  }, [showContent]);
+  }, [params]);
 
   return (
     <div

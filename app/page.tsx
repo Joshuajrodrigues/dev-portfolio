@@ -42,14 +42,15 @@ export default function Home() {
           {/* <Accordion question="Blog" answer="test" /> */}
           <div id="feat" className="w-full ">
             <Accordion
+              hash="#feat"
               open={true}
               question="Featured Projects"
               answer={<Projects />}
             />
           </div>
-          <Accordion open={true} question="Career" answer={<Career />} />
-          <Accordion question="About" answer={<About />} />
-          <Accordion question="Contact" answer={<Contact />} />
+          <Accordion hash="#career" open={true} question="Career" answer={<Career />} />
+          <Accordion hash="#about" question="About" answer={<About />} />
+          <Accordion hash="#contact" question="Contact" answer={<Contact />} />
         </section>
       </section>
     </>
