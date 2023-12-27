@@ -24,10 +24,10 @@ export default function ProjectCard({
   return (
     <>
       <figure
-        className={`w-[250px] overflow-hidden rounded-md border-2 border-black ${theme} font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
+        className={`w-[250px] md:w-96 md:h-64 overflow-hidden rounded-md border-2 border-black ${theme} font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
       >
         <Image
-          className="w-full h-24 "
+          className="w-full h-24 md:h-48 "
           width={1000}
           height={1000}
           src={imageUrl}
@@ -39,7 +39,7 @@ export default function ProjectCard({
           </Link>
         </figcaption>
       </figure>
-      <p className="w-full m-2">{description}</p>
+      <p className="w-full m-2 md:text-lg">{description}</p>
     </>
   );
 }

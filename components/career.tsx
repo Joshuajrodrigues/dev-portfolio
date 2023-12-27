@@ -5,10 +5,10 @@ import { ExternalLink } from "lucide-react";
 const Career = () => {
   return (
     <div>
-      <section className="w-full flex flex-wrap">
+      <section className="w-full flex flex-wrap md:p-2">
         <p>
           <a
-            className="text-lg"
+            className="text-lg md:text-xl"
             href="https://www.teknorix.com/"
             target="_blank"
           >
@@ -27,7 +27,7 @@ const Career = () => {
             </span>
           </a>
         </p>
-        <div>
+        <div className=" md:text-lg  ">
           <ul className="list-disc p-2">
             <li className="mb-2">
               In charge of development, maintenance, and shipping code to

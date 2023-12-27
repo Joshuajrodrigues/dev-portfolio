@@ -11,7 +11,7 @@ const ProjectControl = () => {
     <div className="flex sm:flex-col">
       <Button
         className={
-          "w-16 p-1 m-1 h-16 flex items-center justify-center" + " " + theme
+          "w-16 md:w-32 p-1 m-1 h-16 flex items-center justify-center" + " " + theme
         }
         ariaLabel="Click for previous project"
         onClick={() => {
@@ -22,11 +22,11 @@ const ProjectControl = () => {
           }
         }}
       >
-        <ArrowLeftSquare />
+        <ArrowLeftSquare  />
       </Button>
       <Button
         className={
-          "w-16 p-1 m-1 h-16 flex items-center justify-center" + " " + theme
+          "w-16 md:w-32 p-1 m-1 h-16 flex items-center justify-center" + " " + theme
         }
         ariaLabel="Click for next project"
         onClick={() => {

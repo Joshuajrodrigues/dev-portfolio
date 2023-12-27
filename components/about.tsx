@@ -6,8 +6,8 @@ import Badge from "./badge";
 
 const About = () => {
   return (
-    <div>
-      <section className="w-full flex flex-wrap">
+    <div className="md:p-2 md:text-lg">
+      <section className="w-full flex flex-wrap ">
         <ul className="list-disc p-2">
           <li className="mb-2">🎓Completed computer engineering in 2021.</li>
           <li className="mb-2">

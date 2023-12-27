@@ -19,16 +19,16 @@ type props = {
 export const ProjectSection = (props: props) => {
   return (
     <section className="w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start ">
-      <div className="sm:w-64">
-        <div>
+      <div className="sm:w-64 md:w-2/3">
+        <div className="w-full">
           <ProjectCard
-            description={props.projectDesp}
+            description={""}
             imageUrl={props.projectImage}
             link={props.projectlink}
             text={props.projectName}
           />
+          <p className="w-full m-2 md:text-lg">{props.projectDesp}</p>
         </div>
-
         <div className="flex flex-wrap">
           {props.tags!.map((item) => (
             <Tags key={item} nostyle={true}>
@@ -37,8 +37,8 @@ export const ProjectSection = (props: props) => {
           ))}
         </div>
       </div>
-      <div className="w-full sm:ml-3 flex justify-between sm:justify-center items-start sm:items-center sm:flex-col">
-        <div>
+      <div className="w-full sm:ml-3 md:ml-5 md:mt-5 flex justify-between sm:justify-center items-start sm:items-center sm:flex-col">
+        <div className="flex flex-col items-center justify-center">
           <ProjectControl />
           <Pagination />
         </div>

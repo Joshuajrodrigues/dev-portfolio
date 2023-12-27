@@ -2,7 +2,7 @@ import { MailIcon, Linkedin, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-start ">
+    <div className="flex flex-col justify-start md:text-lg md:p-2 ">
       <a
         className="flex items-center p-2"
         target="_blank"

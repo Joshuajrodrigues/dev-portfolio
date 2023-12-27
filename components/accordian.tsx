@@ -35,7 +35,7 @@ export default function Accordion({ question, answer, isProjects,open=false }: P
         role="button"
         aria-expanded={showContent}
         style={{ borderBottom: showContent ? "solid 2px" : "0px" }}
-        className={`flex w-full items-center justify-between rounded-[5px] border-black ${theme} p-5 font-bold`}
+        className={`flex w-full md:text-xl font-bold items-center justify-between rounded-[5px] border-black ${theme} p-5 font-bold`}
         onClick={() => {
           setShowContent(!showContent);
         }}
