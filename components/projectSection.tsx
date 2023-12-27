@@ -37,7 +37,7 @@ export const ProjectSection = (props: props) => {
           ))}
         </div>
       </div>
-      <div className="w-full flex justify-between sm:justify-center items-start sm:items-center sm:flex-col">
+      <div className="w-full sm:ml-3 flex justify-between sm:justify-center items-start sm:items-center sm:flex-col">
         <div>
           <ProjectControl />
           <Pagination />
