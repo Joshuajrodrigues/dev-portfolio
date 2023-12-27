@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 
 const Career = () => {
   return (
-    <div>
+    <div id="career">
       <section className="w-full flex flex-wrap md:p-2">
         <p>
           <a

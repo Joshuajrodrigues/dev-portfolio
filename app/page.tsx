@@ -26,8 +26,6 @@ let marqueeItems: Marquee = [
 export default function Home() {
   return (
     <>
-    
-
       <section className="w-full flex flex-col items-center justify-center">
         <Marquee items={marqueeItems} />
       </section>
@@ -42,11 +40,13 @@ export default function Home() {
 
         <section className="w-full flex flex-col justify-center items-center">
           {/* <Accordion question="Blog" answer="test" /> */}
-          <Accordion
-            open={true}
-            question="Featured Projects"
-            answer={<Projects />}
-          />
+          <div id="feat" className="w-full ">
+            <Accordion
+              open={true}
+              question="Featured Projects"
+              answer={<Projects />}
+            />
+          </div>
           <Accordion open={true} question="Career" answer={<Career />} />
           <Accordion question="About" answer={<About />} />
           <Accordion question="Contact" answer={<Contact />} />
