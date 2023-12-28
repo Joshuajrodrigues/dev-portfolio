@@ -9,7 +9,7 @@ const Intro = () => {
     <div className="w-full flex flex-col items-center justify-center font-bold lg:pt-5 md:font-extrabold ">
       <section className="flex flex-col items-center justify-center">
         <Tags>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-bold text-center ">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-oneslice lg:font-bold text-center ">
             Building web solutions to everyday problems.
           </h2>
         </Tags>

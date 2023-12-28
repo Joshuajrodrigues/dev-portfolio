@@ -44,7 +44,7 @@ export default function Accordion({
         role="button"
         aria-expanded={showContent}
         style={{ borderBottom: showContent ? "solid 2px" : "0px" }}
-        className={`flex w-full md:text-xl lg:text-2xl font-bold items-center justify-between rounded-[5px] border-black ${theme} p-5 font-bold`}
+        className={`flex font-oneslice w-full md:text-xl lg:text-2xl font-bold items-center justify-between rounded-[5px] border-black ${theme} p-5 font-bold`}
         onClick={() => {
           setShowContent(!showContent);
         }}
