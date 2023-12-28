@@ -74,6 +74,7 @@ const Navbar = () => {
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden cursor-pointer"
+            aria-label="Click to open navbar"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
