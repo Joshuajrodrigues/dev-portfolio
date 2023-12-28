@@ -62,7 +62,7 @@ const Navbar = () => {
               ariaLabel="Click to download resume"
               onClick={() => {
                 let a = document.createElement("a");
-                a.href = "/resume/Joshua-Rodrigues-Resume-2024-25.pdf";
+                a.href = "/resume/Joshua-Rodrigues-Resume-2024.pdf";
                 a.target = "_blank";
                 a.click();
               }}
