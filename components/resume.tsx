@@ -28,7 +28,7 @@ export default function Resume() {
         }}
       >
         <span className=" flex text-lg font-bolder">
-          Resume <Download className={`ml-2 `} />{" "}
+           Resume <Download className={`ml-2 `} />{" "}
         </span>
       </Button>
     </div>
