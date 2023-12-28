@@ -10,7 +10,7 @@ const selector= (store: Store) => ({
   });
 
 export default function ColorPicker({ items }: { items: Color[] }) {
-  const [activeItem, setActiveItem] = useState<string | null>(items[1]);
+  const [activeItem, setActiveItem] = useState<string | null>(items[0]);
 
   const {theme, changeTheme} = useTheme(selector,shallow)
 

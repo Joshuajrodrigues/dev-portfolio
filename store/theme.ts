@@ -9,7 +9,7 @@ export type Store ={
 }
 
 export const useTheme = createWithEqualityFn<Store>((set, get) => ({
-  theme: "bg-orange-400",
+  theme: "bg-rose-400",
   changeTheme(color: Color) {
     let bg:Rgb = "bg-rose-400";
     if (color === "Yellow") {
