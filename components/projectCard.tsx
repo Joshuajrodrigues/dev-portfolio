@@ -35,7 +35,7 @@ export default function ProjectCard({
             alt="project"
           />
           <figcaption className="border-t-2 flex justify-between items-center border-black p-4 lg:text-2xl ">
-            {text} <em className=" lg:text-xl underline">Click to read more</em>
+            {text} <em className=" lg:text-xl underline">Read more</em>
           </figcaption>
         </figure>
       </Link>
