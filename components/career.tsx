@@ -61,7 +61,7 @@ const Career = () => {
                   a.target = "_blank";
                   a.click();
                 }}
-                className="text-gray-800 inline p-1 text-sm  font-semibold "
+                className="text-gray-800 inline p-1 mr-1 text-sm  font-semibold "
               >
                 <span className="flex justify-center items-center">
                   Resume <Download className={`ml-1 `} size={12} />

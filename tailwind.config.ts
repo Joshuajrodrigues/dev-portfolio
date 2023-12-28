@@ -26,8 +26,8 @@ const config: Config = {
         // => @media (min-width: 1536px) { ... }
       },
       animation: {
-        marquee: "marquee 8s linear infinite",
-        marquee2: "marquee2 8s linear infinite",
+        marquee: "marquee 10s linear infinite",
+        marquee2: "marquee2 10s linear infinite",
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
       keyframes: {
