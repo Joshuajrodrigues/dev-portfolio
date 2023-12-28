@@ -10,7 +10,7 @@ const Projects = () => {
       return (
         <>
           <ProjectSection
-            projectDesp="A kitchen management web app to store kitchen stock, recipesand allow family colaboration for shopping."
+            projectDesp="A kitchen management web app to store kitchen stock, recipesand allow family collaboration for shopping."
             projectImage="/images/kuzina.png"
             projectlink="/project/kuzina"
             projectName="Kuzina"
@@ -53,7 +53,7 @@ const Projects = () => {
       return (
         <>
           <ProjectSection
-            projectDesp="A kitchen management web app to store kitchen stock, recipesand allow family colaboration for shopping."
+            projectDesp="A kitchen management web app to store kitchen stock, recipesand allow family collaboration for shopping."
             projectImage="/images/kuzina.png"
             projectlink="/project/kuzina"
             projectName="Kuzina"
