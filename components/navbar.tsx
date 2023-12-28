@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="bg-white shadow fixed w-full top-0 z-10 ">
       <div className=" mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className=" font-oneslice ">
+          <div className=" font-oneslice font-semibold ">
             <Link href="/">
               Portfolio | <br className=" hidden md:inline lg:hidden" /> Joshua
               Rodrigues
