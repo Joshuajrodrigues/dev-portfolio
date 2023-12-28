@@ -90,7 +90,7 @@ const Navbar = () => {
           </button>
         </div>
         {menuOpen && (
-          <div className="block md:hidden bg-white border-t-2 py-2">
+          <div className="block md:hidden bg-amber-100 border-t-2 border-black py-2">
             <div className="flex flex-col">
               <a
                 href="#feat"
@@ -120,7 +120,7 @@ const Navbar = () => {
               >
                 Contact
               </a>
-              <div className="flex justify-between items-center border-t-2 py-2">
+              <div className="flex justify-between items-center border-t-2 border-black py-2">
                 <a
                   target="_blank"
                   href="mailto:joshuarodriguesdev@gmail.com"
