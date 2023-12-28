@@ -10,7 +10,7 @@ const selector= (store: Store) => ({
   });
 
 export default function ColorPicker({ items }: { items: Color[] }) {
-  const [activeItem, setActiveItem] = useState<string | null>(items[0]);
+  const [activeItem, setActiveItem] = useState<string | null>(items[2]);
 
   const {theme, changeTheme} = useTheme(selector,shallow)
 
@@ -34,7 +34,7 @@ export default function ColorPicker({ items }: { items: Color[] }) {
               setActiveItem(item);
               changeTheme(item)
             }}
-            className="my-2 flex items-center"
+            className="my-2  flex items-center"
             role="radio"
             aria-label={item +" theme"}
             aria-checked={theme===bg&& isChecked}

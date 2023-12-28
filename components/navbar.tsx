@@ -10,17 +10,17 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
   return (
-    <div className="bg-white shadow fixed w-full top-0 z-10 ">
+    <div className=" bg-amber-100 shadow-black shadow-sm fixed w-full top-0 z-10 ">
       <div className=" mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className=" font-oneslice font-semibold ">
+          <div className=" font-oneslice font-bold ">
             <Link href="/">
               Portfolio | <br className=" hidden md:inline lg:hidden" /> Joshua
               Rodrigues
             </Link>
           </div>
 
-          <div className="hidden md:flex md:items-center">
+          <div className="hidden md:flex md:items-center font-semibold">
             <a
               href="#feat"
               onClick={() => router.push("/#feat")}
@@ -52,7 +52,7 @@ const Navbar = () => {
             </a>
             <span className=" mr-4 text-gray-500 ">|</span>
             <a
-              className="cursor-pointer rounded-md border-2 border-black  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none  bg-white w-18    mr-4 text-gray-800 p-1 text-sm flex justify-center items-center font-semibold "
+              className="cursor-pointer rounded-md border-2 border-black  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none  bg-white w-18    mr-4 text-gray-800 p-1 text-sm flex justify-center items-center font-bold "
               target="_blank"
               href="mailto:joshuarodriguesdev@gmail.com"
             >
@@ -66,7 +66,7 @@ const Navbar = () => {
                 a.target = "_blank";
                 a.click();
               }}
-              className="text-gray-800 p-1 text-sm flex justify-center items-center font-semibold "
+              className="text-gray-800 p-1 text-sm flex justify-center items-center font-bold "
             >
               Resume <Download className={`ml-1 `} size={12} />
             </Button>

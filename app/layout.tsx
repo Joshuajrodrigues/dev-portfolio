@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className+" "+"bg-amber-100"}>
         <Navbar/>
         <main className="  mt-16 flex flex-col items-center justify-center p-5 md:m-5 md:mt-20 lg:m-16 text-black">
           <Header />

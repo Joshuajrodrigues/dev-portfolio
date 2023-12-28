@@ -2,7 +2,7 @@ import { Marquee as MarqueeType } from "@/app/page"
 
 export default function Marquee({ items }: { items: MarqueeType }) {
     return (
-      <div className="relative flex w-full overflow-x-hidden border-b-2 border-t-2 border-black bg-white font-bold">
+      <div className="relative flex w-full overflow-x-hidden border-b-2 border-t-2 border-black bg-amber-100 font-bold">
         <div className="animate-marquee whitespace-nowrap py-4">
           {items.map((item) => {
             return (
