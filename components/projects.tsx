@@ -24,7 +24,7 @@ const Projects = () => {
       return (
         <>
           <ProjectSection
-            projectDesp="A congitive behavioral therapy journaling app, for challenging negative thoughts and emotions."
+            projectDesp="A cognitive behavioral therapy journaling app, for challenging negative thoughts and emotions."
             projectImage="/kognitive/test.png"
             projectlink="/project/kognitive"
             projectName="Kognitive"
