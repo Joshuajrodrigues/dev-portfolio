@@ -8,35 +8,36 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
   return (
     <div className="bg-white shadow fixed w-full top-0 z-10 ">
-      <div className="container mx-auto px-4">
+      <div className=" mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className=" font-oneslice flex flex-col">
+          <div className=" font-oneslice ">
             <Link href="/">
-            Portfolio
+              Portfolio | <br className=" hidden md:inline lg:hidden" /> Joshua
+              Rodrigues
             </Link>
-             </div>
+          </div>
 
           <div className="hidden md:flex md:items-center">
             <a
               href="#feat"
-              onClick={()=>router.push('/#feat')}
+              onClick={() => router.push("/#feat")}
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
               Featured projects
             </a>
             <a
               href="#career"
-              onClick={()=>router.push('/#career')}
+              onClick={() => router.push("/#career")}
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
               Career
             </a>
             <a
               href="#about"
-              onClick={()=>router.push('/#about')}
+              onClick={() => router.push("/#about")}
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
               About me
@@ -44,7 +45,7 @@ const Navbar = () => {
 
             <a
               href="#contact"
-              onClick={()=>router.push('/#contact')}
+              onClick={() => router.push("/#contact")}
               className="text-gray-800 text-sm font-semibold  mr-4"
             >
               Contact
@@ -93,28 +94,28 @@ const Navbar = () => {
             <div className="flex flex-col">
               <a
                 href="#feat"
-                onClick={()=>router.push('/#feat')}
+                onClick={() => router.push("/#feat")}
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
                 Featured projects
               </a>
               <a
                 href="#career"
-                onClick={()=>router.push('/#career')}
+                onClick={() => router.push("/#career")}
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
                 Career
               </a>
               <a
                 href="#about"
-                onClick={()=>router.push('/#about')}
+                onClick={() => router.push("/#about")}
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
                 About
               </a>
               <a
                 href="#contact"
-                onClick={()=>router.push('/#contact')}
+                onClick={() => router.push("/#contact")}
                 className="text-gray-800 text-md font-semibold  mb-2"
               >
                 Contact

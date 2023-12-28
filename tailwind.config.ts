@@ -46,6 +46,7 @@ const config: Config = {
       },
       fontFamily: {
         oneslice: ["ONESLICE", "timesnewroman"],
+      //  source:["SOURCE", "sansserif"]
       },
     },
   },
