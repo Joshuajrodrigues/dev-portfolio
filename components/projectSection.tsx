@@ -18,8 +18,8 @@ type props = {
 
 export const ProjectSection = (props: props) => {
   return (
-    <section className="w-full lg:mx-24 lg:my-8  flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start ">
-      <div className="sm:w-64 md:w-2/3">
+    <section className="w-full lg:mx-0 lg:px-8 sml:px-12 lg:my-0  flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-center ">
+      <div className="sm:w-64 md:w-2/3 lg:w-full">
         <div className="w-full">
           <ProjectCard
             description={""}
@@ -37,7 +37,7 @@ export const ProjectSection = (props: props) => {
           ))}
         </div>
       </div>
-      <div className="w-full sm:ml-3 md:ml-5 md:mt-5 lg:mt-16 flex justify-between sm:justify-center items-start sm:items-center sm:flex-col">
+      <div className="w-full sm:ml-3 sml:ml-0 lg:ml-0 lg:mt-0 flex justify-between sm:justify-center sml:items-end lg:items-end items-start sm:items-center sm:flex-col">
         <div className="flex flex-col items-center justify-center">
           <ProjectControl />
           <Pagination />
