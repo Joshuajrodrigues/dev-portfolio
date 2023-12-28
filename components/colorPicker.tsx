@@ -10,7 +10,7 @@ const selector= (store: Store) => ({
   });
 
 export default function ColorPicker({ items }: { items: Color[] }) {
-  const [activeItem, setActiveItem] = useState<string | null>(items[2]);
+  const [activeItem, setActiveItem] = useState<string | null>(items[1]);
 
   const {theme, changeTheme} = useTheme(selector,shallow)
 
@@ -21,11 +21,11 @@ export default function ColorPicker({ items }: { items: Color[] }) {
         let bg = "bg-white";
 
         if (item === "Yellow") {
-          bg = "bg-yellow-500";
+          bg = "bg-rose-400";
         } else if (item === "Orange") {
           bg = "bg-orange-400";
         } else if (item === "Green") {
-          bg = "bg-lime-500";
+          bg = "bg-green-500";
         }
 
         return (

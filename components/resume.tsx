@@ -6,7 +6,7 @@ import { Download } from "lucide-react";
 export default function Resume() {
   return (
     <div
-      className=" animate-bounce w-full lg:w-80"
+      className=" animate-wiggle w-full lg:w-80"
       // animate={{
       //   y: [1, 2, 3, 2, 1, -2, -3, -2],
       // }}

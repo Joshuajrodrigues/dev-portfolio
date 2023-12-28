@@ -38,13 +38,13 @@ export default function Accordion({
 
   return (
     <div
-      className={`w-full my-5  rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
+      className={`w-full my-5   rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
     >
       <button
         role="button"
         aria-expanded={showContent}
         style={{ borderBottom: showContent ? "solid 2px" : "0px" }}
-        className={`flex font-oneslice w-full md:text-xl lg:text-2xl font-bold items-center justify-between rounded-[5px] border-black ${theme} p-5 font-bold`}
+        className={`flex font-oneslice w-full text-xl lg:text-2xl font-bolder items-center justify-between rounded-[5px] border-black ${theme} p-5 font-bold`}
         onClick={() => {
           setShowContent(!showContent);
         }}
