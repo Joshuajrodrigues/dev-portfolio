@@ -6,11 +6,11 @@ const Projects = () => {
   const project = useProject((s) => s.project);
 
   switch (project) {
-    case 0:
+    case 1:
       return (
         <>
           <ProjectSection
-            projectDesp="A kitchen management web app to store kitchen stock, recipesand allow family collaboration for shopping."
+            projectDesp="A kitchen management web app to store kitchen stock, recipes, shopping list and allow family collaboration. Allows people to join a group and collaboarate privately."
             projectImage="/images/kuzina.png"
             projectlink="/project/kuzina"
             projectName="Kuzina"
@@ -20,11 +20,11 @@ const Projects = () => {
           />
         </>
       );
-    case 1:
+    case 0:
       return (
         <>
           <ProjectSection
-            projectDesp="A cognitive behavioral therapy journaling app, for challenging negative thoughts and emotions."
+            projectDesp="A cognitive behavioral therapy journaling app, for challenging negative thoughts and emotions. With froms for anger mangement, stress, goal building. Comes with PWA support"
             projectImage="/kognitive/test.png"
             projectlink="/project/kognitive"
             projectName="Kognitive"
@@ -53,7 +53,7 @@ const Projects = () => {
       return (
         <>
           <ProjectSection
-            projectDesp="A kitchen management web app to store kitchen stock, recipesand allow family collaboration for shopping."
+            projectDesp="A kitchen management web app to store kitchen stock, recipes, shopping list and allow family collaboration. Allows people to join a group and collaboarate privately."
             projectImage="/images/kuzina.png"
             projectlink="/project/kuzina"
             projectName="Kuzina"
