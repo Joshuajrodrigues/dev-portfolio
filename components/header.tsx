@@ -3,7 +3,6 @@
 import { useTheme } from "@/store/theme";
 import Link from "next/link";
 
-
 export default function Header() {
   const theme = useTheme((s)=>s.theme)
 

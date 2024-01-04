@@ -22,11 +22,8 @@ const Navbar = () => {
       <div className=" mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <div className="font-bold ">
-            <Link className="flex items-center justify-between" href="/">
+            <Link className="flex flex-row items-center justify-between" href="/">
               <span className=" font-oneslice font-bold ">Portfolio </span>
-              <span className="text-xs  ml-1">
-                <br className=" hidden md:inline lg:hidden" />| Joshua Rodrigues
-              </span>
             </Link>
           </div>
 
