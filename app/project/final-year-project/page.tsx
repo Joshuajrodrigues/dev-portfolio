@@ -2,7 +2,7 @@ import Card from "@/components/card";
 import ImageCard from "@/components/imageCard";
 import ProjectLink from "@/components/projectLinks";
 import Tags from "@/components/tags";
-import { ArrowBigLeftIcon, ExternalLink } from "lucide-react";
+import { ArrowBigLeftIcon, ExternalLink, Github } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 export const metadata: Metadata = {
@@ -23,15 +23,31 @@ const page = () => {
       
         </span>
       </section>
-      <Tags>
-        <h2 className="text-2xl text-center">
-          Glaucoma detection using clustering algorithms - Capstone Project
-        </h2>
-      </Tags>
-      <ProjectLink
-            visit="https://glaucoma-detector.vercel.app/"
-            code="https://github.com/Joshuajrodrigues/glaucoma-detector"
-          />
+      <div className="flex w-full justify-between items-center">
+        <Card className="w-fit h-fit" heading ={
+          <h2 className="text-2xl"> Glaucoma detection using clustering algorithms - Capstone Project </h2>
+          
+        }/>
+       
+        <div className="flex flex-col items-center justify-start ml-3 ">
+          <a
+            target="_blank"
+            href={"https://glaucoma-detector.vercel.app/"}
+            className="flex justify-center text-sm  cursor-pointer items-center rounded-md border-2 border-black bg-white w-16  m-1 px-2  font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+          >
+            Link <ExternalLink className="ml-1" />
+          </a>{" "}
+          <a
+            target="_blank"
+            href={"https://github.com/Joshuajrodrigues/glaucoma-detector"}
+            className="flex justify-center text-sm  cursor-pointer items-center rounded-md border-2 border-black bg-white w-16  m-1 px-2  font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+          >
+            Git <Github className="ml-1" />
+          </a>
+        </div>
+      </div>
+ 
+
       <Card
         className="w-full m-4"
         heading="Preface"
