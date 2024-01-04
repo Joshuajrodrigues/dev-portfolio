@@ -4,7 +4,7 @@ import { motion} from "framer-motion"
 const fadeInBadgeVarient ={
   initial:{
     opacity:0,
-    y:100
+    y:60
   },
   animate:(index:number)=>({
     opacity:1,
