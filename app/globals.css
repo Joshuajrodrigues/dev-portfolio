@@ -4,6 +4,6 @@
 
 @font-face {
   font-family: "ONESLICE";
-  src: url("../public/fonts/DegularVariable.ttf");
-  font-display: swap;
+  src: url("../public/fonts/DegularDisplay-Bold.otf");
+  font-display: optional;
 }
