@@ -1,8 +1,5 @@
-import React from "react";
 
-import Tags from "./tags";
-import { ExternalLink } from "lucide-react";
-import Badge from "./badge";
+import Skill from "./skill";
 
 const About = () => {
   return (
@@ -28,27 +25,85 @@ const About = () => {
         <u>Tech stack:</u>{" "}
       </h3>
       <section className="flex flex-wrap lg:w-2/3">
-        <Badge content="HTML/CSS" />
-        <Badge content="Javascript" />
-        <Badge content="TypeScript" />
-        <Badge content="React" />
-        <Badge content="NextJs" />
-        <Badge content="Redux" />
-        <Badge content="Zustand" />
-        <Badge content="Jest" />
-        <Badge content="AntDesign" />
-        <Badge content="TailwindCss" />
-        <Badge content="MaterialUI" />
-        <Badge content="SCSS/LESS" />
-        <Badge content="Webpack" />
-        <Badge content="NodeJs" />
-        <Badge content="ExpressJs" />
-        <Badge content="Fastify" />
-        <Badge content="Golang" />
-        <Badge content="Python" />
+        <Skill skills={skills} />
       </section>
     </div>
   );
 };
+
+const skills = [
+  {
+    id: 1,
+    name: "HTML/CSS",
+  },
+  {
+    id: 2,
+    name: "JavaScript",
+  },
+  {
+    id: 3,
+    name: "TypeScript",
+  },
+  {
+    id: 4,
+    name: "React",
+  },
+  {
+    id: 5,
+    name: "NextJs",
+  },
+  {
+    id: 6,
+    name: "Redux",
+  },
+  {
+    id: 7,
+    name: "Zustand",
+  },
+  {
+    id: 8,
+    name: "Jest",
+  },
+  {
+    id: 9,
+    name: "AntDesign",
+  },
+  {
+    id: 10,
+    name: "TailwindCss",
+  },
+  {
+    id: 11,
+    name: "MaterialUI",
+  },
+  {
+    id: 12,
+    name: "SCSS/LESS",
+  },
+  {
+    id: 13,
+    name: "Webpack",
+  },
+  {
+    id: 14,
+    name: "NodeJs",
+  },
+  {
+    id: 15,
+    name: "ExpressJs",
+  },
+  {
+    id: 16,
+    name: "Fastify",
+  },
+  {
+    id: 17,
+    name: "Golang",
+  },
+  {
+    id: 18,
+    name: "Python",
+  },
+];
 
 export default About;
