@@ -1,6 +1,14 @@
 "use client";
 
-import { CrossIcon, Download, LucideMenu, MailIcon, MenuIcon, PanelTopClose, PanelTopOpen } from "lucide-react";
+import {
+  CrossIcon,
+  Download,
+  LucideMenu,
+  MailIcon,
+  MenuIcon,
+  PanelTopClose,
+  PanelTopOpen,
+} from "lucide-react";
 import { useState } from "react";
 import Button from "./button";
 import { useRouter } from "next/navigation";
@@ -15,8 +23,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           <div className="font-bold ">
             <Link className="flex items-center justify-between" href="/">
-              <span className=" font-oneslice font-bold mr-1">Portfolio |</span>
-              <br className=" hidden md:inline lg:hidden ml-2" /> Joshua Rodrigues
+              <span className=" font-oneslice font-bold ">Portfolio </span>
+              <span className="text-xs  ml-1">
+                <br className=" hidden md:inline lg:hidden" />| Joshua Rodrigues
+              </span>
             </Link>
           </div>
 
@@ -50,7 +60,7 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <span className=" mr-4 text-gray-500 ">|</span>
+            <span className=" mr-4 text-black ">|</span>
             <a
               className="cursor-pointer rounded-md border-2 border-black  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none  bg-white w-18    mr-4 text-black p-1 text-sm flex justify-center items-center font-bold "
               target="_blank"
@@ -77,10 +87,7 @@ const Navbar = () => {
             className="md:hidden cursor-pointer"
             aria-label="Click to open navbar"
           >
-            {
-              menuOpen ? <PanelTopClose/> : <PanelTopOpen/>
-            }
-         
+            {menuOpen ? <PanelTopClose /> : <PanelTopOpen />}
           </button>
         </div>
         {menuOpen && (
