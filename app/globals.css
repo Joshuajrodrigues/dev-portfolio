@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "ONESLICE";
-  src: url("../public/fonts/DegularDisplay-Bold.otf");
-  font-display: fallback;
+  src: url("../public/fonts/DegularDisplay-Bold.woff2");
+  font-display: swap;
 ;
 }
