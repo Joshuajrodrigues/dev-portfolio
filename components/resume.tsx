@@ -2,20 +2,22 @@
 
 import Button from "./button";
 import { Download } from "lucide-react";
-
+import {motion} from 'framer-motion'
 export default function Resume() {
   return (
-    <div
-      className=" animate-wiggle w-full lg:w-80"
-      // animate={{
-      //   y: [1, 2, 3, 2, 1, -2, -3, -2],
-      // }}
-      // transition={{
-      //   duration: 1,
-      //   ease: "anticipate",
-      //   repeat: Infinity,
-      //   repeatDelay: 0,
-      // }}
+    <motion.div
+      className=" w-full lg:w-80"
+       animate={{
+      
+        // rotateY:[0,30,0],
+         rotateZ:[-2,2,-2,2,-2,0]
+       }}
+      transition={{
+        duration: 1,
+      
+        repeat: Infinity,
+        repeatDelay: 2,
+      }}
     >
       <Button
         className="text-white shadow-[4px_4px_0px_0px_rgba(1,1,1,1)] bg-black w-full lg:w-80 flex items-center justify-center "
@@ -31,6 +33,6 @@ export default function Resume() {
            Resume <Download className={`ml-2 `} />{" "}
         </span>
       </Button>
-    </div>
+    </motion.div>
   );
 }
