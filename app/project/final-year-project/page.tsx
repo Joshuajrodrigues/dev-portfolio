@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <section className="mx-2 w-full flex flex-col justify-center items-center lg:text-xl">
-      <section className="w-full flex justify-between items-center mb-3">
+      <section className="w-full flex justify-start items-center mb-3">
         <Link
           className=" flex cursor-pointer items-center justify-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
           href={"/"}
@@ -20,10 +20,7 @@ const page = () => {
           <ArrowBigLeftIcon /> Back
         </Link>
         <span className="">
-          <ProjectLink
-            visit="https://glaucoma-detector.vercel.app/"
-            code="https://github.com/Joshuajrodrigues/glaucoma-detector"
-          />
+      
         </span>
       </section>
       <Tags>
@@ -31,6 +28,10 @@ const page = () => {
           Glaucoma detection using clustering algorithms - Capstone Project
         </h2>
       </Tags>
+      <ProjectLink
+            visit="https://glaucoma-detector.vercel.app/"
+            code="https://github.com/Joshuajrodrigues/glaucoma-detector"
+          />
       <Card
         className="w-full m-4"
         heading="Preface"
