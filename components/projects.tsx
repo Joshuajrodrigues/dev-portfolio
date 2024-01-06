@@ -6,6 +6,7 @@ import kognitiveImage from "@/public/images/kognitive.png";
 import kuzinaImage from "@/public/images/kuzina.png";
 import gla from "@/public/images/gla.png";
 import Image from "next/image";
+
 const Projects = () => {
   const project = useProject((s) => s.project);
 
