@@ -2,12 +2,12 @@
 
 import { useTheme } from "@/store/theme";
 import { Book } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 
 type Props = {
-  imageUrl: string;
+  imageUrl: string| StaticImageData;
   children?: React.ReactNode;
   link: string;
   description: string;
@@ -29,9 +29,6 @@ export default function ProjectCard({
         >
           <Image
             className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-            width={1280}
-            
-            height={720}
             priority={true}
             src={imageUrl}
             alt="project"

@@ -23,10 +23,10 @@ type skill ={
 const Skill = ({skills}:{skills:skill}) => {
   return (
     skills.map((skill) => (
-        <motion.span viewport={{
+        <motion.span  key={skill.id} viewport={{
           once:true
         }} initial="initial" whileInView={"animate"} custom={skill.id} variants={fadeInBadgeVarient}>
-          <Badge key={skill.id} content={skill.name} />
+          <Badge content={skill.name} />
         </motion.span>
       ))
   )

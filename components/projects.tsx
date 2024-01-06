@@ -2,6 +2,9 @@
 import { useProject } from "@/store/project";
 import { ProjectSection } from "./projectSection";
 
+import kognitiveImage from '@/public/images/kognitive.png'
+import kuzinaImage from '@/public/images/kuzina.png'
+import gla from '@/public/images/gla.png'
 const Projects = () => {
   const project = useProject((s) => s.project);
 
@@ -11,7 +14,7 @@ const Projects = () => {
         <>
           <ProjectSection
             projectDesp="A kitchen management web app to store kitchen stock, recipes, shopping list and allow family collaboration. Allows people to join a group and collaboarate privately."
-            projectImage="/images/kuzina.png"
+            projectImage={kuzinaImage}
             projectlink="/project/kuzina"
             projectName="Kuzina"
             tags={["Nextjs", "Supabase", "Typescript", "TailwindCss", "ShadCn"]}
@@ -25,7 +28,7 @@ const Projects = () => {
         <>
           <ProjectSection
             projectDesp="A cognitive behavioral therapy journaling app, for challenging negative thoughts and emotions. With froms for anger mangement, stress, goal building. Comes with PWA support."
-            projectImage="/images/kognitive.png"
+            projectImage={kognitiveImage}
             projectlink="/project/kognitive"
             projectName="Kognitive"
             tags={["React", "Typescript", "Supabase", "ChakraUi"]}
@@ -39,7 +42,7 @@ const Projects = () => {
         <>
           <ProjectSection
             projectDesp="College final year project to use clustering algorithms (fuzzy c strange point) to segment eye image to cup and disk then calculate the cup to disk ratio for glaucoma detection."
-            projectImage="/images/gla.png"
+            projectImage={gla}
             projectlink="/project/final-year-project"
             projectName="  Glaucoma App"
             tags={["Nextjs", "Zustand", "TailwindCss"]}
@@ -54,7 +57,7 @@ const Projects = () => {
         <>
           <ProjectSection
             projectDesp="A kitchen management web app to store kitchen stock, recipes, shopping list and allow family collaboration. Allows people to join a group and collaboarate privately."
-            projectImage="/images/kuzina.png"
+            projectImage={kuzinaImage}
             projectlink="/project/kuzina"
             projectName="Kuzina"
             tags={["Nextjs", "Supabase", "Typescript", "TailwindCss", "ShadCn"]}
