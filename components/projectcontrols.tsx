@@ -8,7 +8,7 @@ const ProjectControl = () => {
   const changeProject = useProject((s) => s.changeProject);
   const project = useProject((s) => s.project);
   return (
-    <div className="flex sm:flex-col lg:text-lg sm:text-sm">
+    <div className="flex md:flex-col lg:text-lg sm:text-sm">
       <Button
         className={
           "w-20 sm:w-20 sml:w-32 md:w-32 lg:w-64 p-1  m-1 h-16 flex items-center justify-center" +
