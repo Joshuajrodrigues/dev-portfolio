@@ -18,7 +18,7 @@ const Projects = () => {
             projectImage={
               <Image
                 className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-                priority={true}
+           
                 src={kuzinaImage}
                 alt="Kuzina"
               />
@@ -39,7 +39,7 @@ const Projects = () => {
             projectImage={
               <Image
                 className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-                priority={true}
+       
                 src={kognitiveImage}
                 alt="Kognitive"
               />
@@ -60,7 +60,7 @@ const Projects = () => {
             projectImage={
               <Image
                 className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-                priority={true}
+        
                 src={gla}
                 alt="Glaucoma App"
               />
