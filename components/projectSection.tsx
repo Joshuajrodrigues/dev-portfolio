@@ -5,11 +5,12 @@ import Tags from "./tags";
 import ProjectControl from "./projectcontrols";
 import Pagination from "./pagination";
 import ProjectLink from "./projectLinks";
+import { StaticImageData } from "next/image";
 
 type props = {
   projectName: string;
   projectlink: string;
-  projectImage: string;
+  projectImage:  StaticImageData;
   projectDesp: string;
   tags: string[];
   visit: string;
