@@ -29,8 +29,10 @@ export default function ProjectCard({
         >
           <Image
             className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-            width={1000}
-            height={1000}
+            width={1280}
+            
+            height={720}
+            priority={true}
             src={imageUrl}
             alt="project"
           />

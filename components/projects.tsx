@@ -25,7 +25,7 @@ const Projects = () => {
         <>
           <ProjectSection
             projectDesp="A cognitive behavioral therapy journaling app, for challenging negative thoughts and emotions. With froms for anger mangement, stress, goal building. Comes with PWA support."
-            projectImage="/kognitive/test.png"
+            projectImage="/images/kognitive.png"
             projectlink="/project/kognitive"
             projectName="Kognitive"
             tags={["React", "Typescript", "Supabase", "ChakraUi"]}
