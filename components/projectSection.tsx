@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import ProjectCard from "./projectCard";
 import { Link } from "lucide-react";
 import Tags from "./tags";
@@ -10,7 +10,7 @@ import { StaticImageData } from "next/image";
 type props = {
   projectName: string;
   projectlink: string;
-  projectImage:  StaticImageData;
+  projectImage:  ReactNode;
   projectDesp: string;
   tags: string[];
   visit: string;
