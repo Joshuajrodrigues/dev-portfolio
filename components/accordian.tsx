@@ -5,7 +5,7 @@ import { MinusSquare, PlusSquare } from "lucide-react";
 import { useTheme } from "@/store/theme";
 import { useProject } from "@/store/project";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
-
+import {motion} from 'framer-motion'
 type Props = {
   open?: boolean;
   question: string;
@@ -63,14 +63,18 @@ export default function Accordion({
           />
         )}
       </button>
-      <div
+      <motion.div
+        transition={{
+          duration:0.5
+        }}
+        animate={{
+          height:showContent ? "fit-content" :0
+        }}
         ref={contentRef}
-        className={` ${
-          showContent ? `h-fit` : "h-0"
-        } overflow-hidden rounded-[5px]  bg-white font-bold transition-[height] ease-in-out`}
+        className={`  overflow-hidden rounded-[5px]  bg-white font-bold `}
       >
         <div className="p-5">{answer}</div>
-      </div>
+      </motion.div>
     </div>
   );
 }

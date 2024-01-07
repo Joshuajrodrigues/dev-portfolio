@@ -25,7 +25,7 @@ export default function ColorPicker({ items }: { items: Color[] }) {
         } else if (item === "Orange") {
           bg = "bg-blue-400";
         } else if (item === "Green") {
-          bg = "bg-teal-600";
+          bg = "bg-teal-500";
         }
 
         return (

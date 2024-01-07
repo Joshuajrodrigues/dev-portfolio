@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { createWithEqualityFn } from "zustand/traditional";
 
 export type Color =  "Yellow" | "Orange" | "Green"
-type Rgb = "bg-rose-400"|"bg-blue-400"|"bg-teal-600" |"bg-black text-white"
+type Rgb = "bg-rose-400"|"bg-blue-400"|"bg-teal-500" |"bg-black text-white"
 export type Store ={
     theme:Rgb,
     changeTheme:(color:Color)=>void
@@ -17,7 +17,7 @@ export const useTheme = createWithEqualityFn<Store>((set, get) => ({
     } else if (color === "Orange") {
       bg = "bg-blue-400";
     } else if (color === "Green") {
-      bg = "bg-teal-600";
+      bg = "bg-teal-500";
     }
 
     set({
