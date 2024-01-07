@@ -3,7 +3,7 @@ import Skill from "./skill";
 
 const About = () => {
   return (
-    <div id="about" className="md:p-2 md:text-lg lg:text-xl lg:p-2">
+    <div id="about" className="md:p-2 md:text-lg lg:text-xl 2xl:text-3xl lg:p-2 2xl:p-6">
       <section className="w-full flex flex-wrap ">
         <ul className="list-disc p-2">
           <li className="mb-2">🎓Completed computer engineering in 2021.</li>

@@ -75,24 +75,25 @@ export default function Home() {
           <Accordion hash="#contact" question="Contact" answer={<Contact />} />
         </section>
       </section>
-      <footer className=" w-full flex flex-col justify-between items-center">
+      <footer className=" w-full flex flex-col 2xl:text-3xl justify-between items-center">
         <span className="flex flex-col items-center justify-center mb-5">
-            <span className="font-bold mr-1">Open for opportunities !</span>
-          <span className="flex">
+          <span className="font-bold mr-1 underline">
+            Open for opportunities !
+          </span>
+          <span className="flex mt-4">
             <a
               className="flex"
               target="_blank"
               href="mailto:joshuarodriguesdev@gmail.com"
             >
-              <MailIcon className="mr-1" />
+              <MailIcon className="mr-1 2xl:mr-8 2xl:scale-150" />
             </a>
             <a
               className=""
               target="_blank"
               href="https://linkedin.com/in/joshua-rodrigues-1655091b2"
             >
-              <Linkedin className="mr-1" /> 
-           
+              <Linkedin className="mr-1 2xl:mr-8  2xl:scale-150" />
             </a>
             <a target="_blank" href="https://github.com/Joshuajrodrigues">
               <GithubIcon />
@@ -100,14 +101,14 @@ export default function Home() {
           </span>
         </span>
         <span className="flex flex-col mb-0">
-          <span className="flex mb-2 font-bold text-center">
-            <Copyright className="mr-1" />
+          <span className="flex 2xl:items-baseline mb-2 font-bold text-center">
+            <Copyright className="mr-1 2xl:mr-8  2xl:scale-150" />
             2024 Joshua Rodrigues <br /> All rights reserved.{" "}
             <a
               target="_blank"
               href="https://github.com/Joshuajrodrigues/dev-portfolio"
             >
-              <GitFork className="ml-1" />
+              <GitFork className="ml-1 2xl:ml-8" />
             </a>
           </span>
         </span>

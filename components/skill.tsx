@@ -25,7 +25,7 @@ const Skill = ({skills}:{skills:skill}) => {
     skills.map((skill) => (
         <motion.span  key={skill.id} viewport={{
           once:true
-        }} initial="initial" whileInView={"animate"} custom={skill.id} variants={fadeInBadgeVarient}>
+        }} initial="initial" whileInView={"animate"}  custom={skill.id} variants={fadeInBadgeVarient}>
           <Badge content={skill.name} />
         </motion.span>
       ))

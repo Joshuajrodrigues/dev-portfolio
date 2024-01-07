@@ -17,12 +17,9 @@ const Projects = () => {
           <ProjectSection
             projectDesp="A kitchen management web app to store kitchen stock, recipes, shopping list and allow family collaboration. Allows people to join a group and collaboarate privately."
             projectImage={
-              <Image
-                className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-           
-                src={kuzinaImage}
-                alt="Kuzina"
-              />
+              <div className="w-full h-28 md:h-48  lg:h-56 2xl:h-80 relative">
+                <Image objectFit="cover" fill src={kuzinaImage} alt="Kuzina" />
+              </div>
             }
             projectlink="/project/kuzina"
             projectName="Kuzina"
@@ -38,12 +35,10 @@ const Projects = () => {
           <ProjectSection
             projectDesp="A cognitive behavioral therapy journaling app, for challenging negative thoughts and emotions. With froms for anger mangement, stress, goal building. Comes with PWA support."
             projectImage={
-              <Image
-                className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-       
-                src={kognitiveImage}
-                alt="Kognitive"
-              />
+              <div className="w-full h-28 md:h-48  lg:h-56 2xl:h-80 relative">
+              <Image objectFit="cover" fill src={kognitiveImage} alt="Kognitive" />
+            </div>
+            
             }
             projectlink="/project/kognitive"
             projectName="Kognitive"
@@ -59,12 +54,10 @@ const Projects = () => {
           <ProjectSection
             projectDesp="College final year project to use clustering algorithms (fuzzy c strange point) to segment eye image to cup and disk then calculate the cup to disk ratio for glaucoma detection."
             projectImage={
-              <Image
-                className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-        
-                src={gla}
-                alt="Glaucoma App"
-              />
+              <div className="w-full h-28 md:h-48  lg:h-56 2xl:h-80 relative">
+              <Image objectFit="cover" fill src={gla} alt="Glaucoma App" />
+            </div>
+            
             }
             projectlink="/project/final-year-project"
             projectName="  Glaucoma App"

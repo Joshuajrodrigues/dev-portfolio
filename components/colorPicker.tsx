@@ -40,7 +40,7 @@ export default function ColorPicker({ items }: { items: Color[] }) {
             aria-checked={theme===bg&& isChecked}
             key={item}
           >
-            <div className={`mr-2.5 h-7 w-7 rounded-sm ${bg} p-1 outline outline-2 outline-black`}>
+            <div className={`mr-2.5 h-7 w-7 2xl:h-9 2xl:w-9 rounded-sm ${bg} p-1 outline outline-2 outline-black`}>
               {theme===bg&& isChecked && (
                 <div className="h-full w-full rounded-full bg-black"></div>
               )}

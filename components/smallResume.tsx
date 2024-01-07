@@ -13,10 +13,10 @@ const SmallResume = () => {
       a.target = "_blank";
       a.click();
     }}
-    className="text-black inline p-1 mr-2 text-sm  font-semibold "
+    className="text-black inline p-1 mr-2 text-sm 2xl:text-3xl  font-semibold "
   >
     <span className="flex justify-center font-bold items-center">
-      Resume <Download className={`ml-1 `} size={12} />
+      Resume <Download className={`ml-1 2xl:mx-2 2xl:scale-150 `} size={12} />
     </span>
   </Button>
   )

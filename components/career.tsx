@@ -7,10 +7,10 @@ import SmallResume from "./smallResume";
 const Career = () => {
   return (
     <div id="career">
-      <section className="w-full flex flex-wrap md:p-2">
+      <section className="w-full flex flex-wrap md:p-2 2xl:p-4">
         <p>
           <a
-            className="text-lg md:text-xl lg:text-2xl"
+            className="text-lg md:text-xl lg:text-2xl 2xl:text-4xl"
             href="https://www.teknorix.com/"
             target="_blank"
           >
@@ -29,30 +29,30 @@ const Career = () => {
             </span>
           </a>
         </p>
-        <div className=" md:text-lg lg:text-xl ">
-          <ul className="list-disc p-2 lg:p-4">
-            <li className="mb-2 lg:mb-4">
+        <div className=" md:text-lg lg:text-xl 2xl:text-3xl">
+          <ul className="list-disc p-2 lg:p-4 2xl:p-6">
+            <li className="mb-2 lg:mb-4  2xl:mb-6">
               Led development, maintenance, and deployment of ReactJS, NextJS,
               Typescript, and LESS/SASS code for client websites.
             </li>
-            <li className="mb-2 lg:mb-4">
+            <li className="mb-2 lg:mb-4 2xl:mb-6">
               Managed various projects, including a feature-rich CRM, an
               expanded Design System Monorepo, and improvements to News and
               Publications and Knowledgebase systems.
             </li>
-            <li className="mb-2 lg:mb-4">
+            <li className="mb-2 lg:mb-4 2xl:mb-6">
               Provided stability and updates to a Grants and Reimbursement
               System, Catalog Dashboard, and Document Recognition System.
             </li>
-            <li className="mb-2 lg:mb-4">
+            <li className="mb-2 lg:mb-4 2xl:mb-6">
               Mentored interns, onboarded team members, and maintained coding
               standards through code reviews and pair programming.
             </li>
-            <li className="mb-2 lg:mb-4">
+            <li className="mb-2 lg:mb-4 2xl:mb-6">
               Contributed to open-source projects, addressing bugs, and
               expanding features for company benefit.
             </li>
-            <li className="mb-2 lg:mb-4">
+            <li className="mb-2 lg:mb-4 2xl:mb-6">
               Do check out the{" "}
               <SmallResume/>
               for more info.

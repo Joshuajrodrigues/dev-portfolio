@@ -29,8 +29,8 @@ export default function Resume() {
           a.click();
         }}
       >
-        <span className=" flex text-lg font-bolder">
-           Resume <Download className={`ml-2 `} />{" "}
+        <span className=" flex text-lg 2xl:text-3xl items-center font-bolder">
+           Resume <Download className={`ml-2 2xl:scale-150 `} />{" "}
         </span>
       </Button>
     </motion.div>

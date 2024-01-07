@@ -6,7 +6,7 @@ export default function Marquee({ items }: { items: MarqueeType }) {
         <div className="animate-marquee whitespace-nowrap py-4">
           {items.map((item) => {
             return (
-              <span key={item.key} className="mx-4 text-4xl">
+              <span key={item.key} className="mx-4 text-4xl 2xl:text-6xl">
                 {item.value}
               </span>
             )
@@ -16,7 +16,7 @@ export default function Marquee({ items }: { items: MarqueeType }) {
         <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-4">
           {items.map((item) => {
             return (
-              <span key={item.key} className="mx-4 text-4xl">
+              <span key={item.key} className="mx-4 text-4xl 2xl:text-6xl">
                 {item.value}
               </span>
             )

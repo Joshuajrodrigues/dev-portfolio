@@ -1,6 +1,7 @@
 import Card from "@/components/card";
 import ImageCard from "@/components/imageCard";
 import ProjectLink from "@/components/projectLinks";
+import SmallLinks from "@/components/smallLinks";
 import Tags from "@/components/tags";
 import { ArrowBigLeftIcon, ExternalLink, Github } from "lucide-react";
 import { Metadata } from "next";
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 };
 const page = () => {
   return (
-    <section className="mx-2 w-full flex flex-col justify-center items-center lg:text-xl">
+    <section className=" 2xl:text-3xl mx-2 w-full flex flex-col justify-center items-center lg:text-xl">
       <section className="w-full flex justify-start items-center mb-3">
         <Link
           className=" flex cursor-pointer items-center justify-center rounded-md border-2 border-black bg-white px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
@@ -22,26 +23,11 @@ const page = () => {
       </section>
       <div className="flex w-full justify-between items-center">
         <Card className="w-fit h-fit" heading ={
-          <h2 className="text-2xl">Kognitve - CBT Journal </h2>
+          <h2 className="text-2xl 2xl:text-5xl">Kognitve - CBT Journal </h2>
           
         }/>
+       <SmallLinks visit="https://kognitive.vercel.app" git="https://github.com/Joshuajrodrigues/cbtjournal" />
        
-        <div className="flex flex-col items-center justify-start ml-3 ">
-          <a
-            target="_blank"
-            href={"https://kognitive.vercel.app"}
-            className="flex justify-center text-sm  cursor-pointer items-center rounded-md border-2 border-black bg-white w-16  m-1 px-2  font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
-          >
-            Link <ExternalLink className="ml-1" />
-          </a>{" "}
-          <a
-            target="_blank"
-            href={"https://github.com/Joshuajrodrigues/cbtjournal"}
-            className="flex justify-center text-sm  cursor-pointer items-center rounded-md border-2 border-black bg-white w-16  m-1 px-2  font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
-          >
-            Git <Github className="ml-1" />
-          </a>
-        </div>
       </div>
 
       <Card
