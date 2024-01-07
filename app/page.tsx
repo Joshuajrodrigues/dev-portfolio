@@ -87,7 +87,7 @@ export default function Home() {
               target="_blank"
               href="mailto:joshuarodriguesdev@gmail.com"
             >
-              <MailIcon className="mr-1 2xl:mr-8 2xl:scale-150" />
+              <MailIcon size={24} className="mr-1 2xl:mr-8 2xl:scale-150" />
             </a>
             <a
               aria-label="my linked in"
@@ -95,23 +95,23 @@ export default function Home() {
               target="_blank"
               href="https://linkedin.com/in/joshua-rodrigues-1655091b2"
             >
-              <Linkedin className="mr-1 2xl:mr-8  2xl:scale-150" />
+              <Linkedin size={24}  className="mr-1 2xl:mr-8  2xl:scale-150" />
             </a>
             <a aria-label="my github" target="_blank" href="https://github.com/Joshuajrodrigues">
-              <GithubIcon />
+              <GithubIcon  size={24} className="mr-1 2xl:mr-8  2xl:scale-150"  />
             </a>
           </span>
         </span>
         <span className="flex flex-col mb-0">
           <span className="flex 2xl:items-baseline mb-2 font-bold text-center">
-            <Copyright className="mr-1 2xl:mr-8  2xl:scale-150" />
+            <Copyright size={24} className="mr-1 2xl:mr-8  2xl:scale-150" />
             2024 Joshua Rodrigues <br /> All rights reserved.{" "}
             <a
               aria-label="fork this portfolio"
               target="_blank"
               href="https://github.com/Joshuajrodrigues/dev-portfolio"
             >
-              <GitFork className="ml-1 2xl:ml-8" />
+              <GitFork size={24} className="ml-1 2xl:ml-8" />
             </a>
           </span>
         </span>
