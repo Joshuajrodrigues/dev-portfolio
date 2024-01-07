@@ -107,6 +107,7 @@ export default function Home() {
             <Copyright className="mr-1 2xl:mr-8  2xl:scale-150" />
             2024 Joshua Rodrigues <br /> All rights reserved.{" "}
             <a
+              aria-label="fork this portfolio"
               target="_blank"
               href="https://github.com/Joshuajrodrigues/dev-portfolio"
             >
