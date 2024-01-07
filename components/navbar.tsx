@@ -1,18 +1,16 @@
 "use client";
 
 import {
-  CrossIcon,
   Download,
-  LucideMenu,
   MailIcon,
-  MenuIcon,
   PanelTopClose,
-  PanelTopOpen,
+  PanelTopOpen
 } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Button from "./button";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
+import SmallResume from "./smallResume";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,18 +63,7 @@ const Navbar = () => {
             >
               Email me <MailIcon size={12} className="ml-1" />
             </a>
-            <Button
-              ariaLabel="Click to download resume"
-              onClick={() => {
-                let a = document.createElement("a");
-                a.href = "/resume/Joshua-Rodrigues-Resume-2024.pdf";
-                a.target = "_blank";
-                a.click();
-              }}
-              className="text-black p-1 text-sm flex justify-center items-center font-bold "
-            >
-              Resume <Download className={`ml-1 `} size={12} />
-            </Button>
+          <SmallResume/>
           </div>
 
           <button

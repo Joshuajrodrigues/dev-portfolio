@@ -15,7 +15,7 @@ const Contact = () => {
         target="_blank"
         href="https://linkedin.com/in/joshua-rodrigues-1655091b2"
       >
-        <Linkedin className="mr-5" /> Find me on LinkedIn<ExternalLink size={12} className="ml-1"/>
+        <Linkedin className="mr-5" />Connect with me on LinkedIn<ExternalLink size={12} className="ml-1"/>
       </a>
       <a
         className="flex items-center p-2 underline"

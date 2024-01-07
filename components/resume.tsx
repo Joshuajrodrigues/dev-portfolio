@@ -16,7 +16,7 @@ export default function Resume() {
         duration: 1,
       
         repeat: Infinity,
-        repeatDelay: 2,
+        repeatDelay: 4,
       }}
     >
       <Button

@@ -1,7 +1,8 @@
-"use client";
 
-import { Download, ExternalLink } from "lucide-react";
-import Button from "./button";
+
+import { ExternalLink } from "lucide-react";
+
+import SmallResume from "./smallResume";
 
 const Career = () => {
   return (
@@ -53,20 +54,7 @@ const Career = () => {
             </li>
             <li className="mb-2 lg:mb-4">
               Do check out the{" "}
-              <Button
-                ariaLabel="Click to download resume"
-                onClick={() => {
-                  let a = document.createElement("a");
-                  a.href = "/resume/Joshua-Rodrigues-Resume-2024.pdf";
-                  a.target = "_blank";
-                  a.click();
-                }}
-                className="text-gray-800 inline p-1 mr-1 text-sm  font-semibold "
-              >
-                <span className="flex justify-center items-center">
-                  Resume <Download className={`ml-1 `} size={12} />
-                </span>
-              </Button>{" "}
+              <SmallResume/>
               for more info.
             </li>
           </ul>
