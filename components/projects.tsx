@@ -36,7 +36,7 @@ const Projects = () => {
             projectDesp="A cognitive behavioral therapy journaling app, for challenging negative thoughts and emotions. With froms for anger mangement, stress, goal building. Comes with PWA support."
             projectImage={
               <div className="w-full h-28 md:h-48  lg:h-56 2xl:h-80 relative">
-              <Image objectFit="cover" fill src={kognitiveImage} alt="Kognitive" />
+              <Image priority placeholder="blur" objectFit="cover" fill src={kognitiveImage} alt="Kognitive" />
             </div>
             
             }
