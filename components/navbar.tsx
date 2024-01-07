@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
   return (
-    <div className=" bg-amber-100 shadow-black shadow-sm fixed w-full top-0 z-10 2xl:text-4xl ">
+    <div  className=" bg-amber-100 shadow-black shadow-sm fixed w-full top-0 z-10 2xl:text-4xl ">
       <div className=" mx-auto px-4 2xl:pl-8">
         <div className="flex items-center justify-between py-4">
           <div className="font-bold ">
@@ -74,6 +74,7 @@ const Navbar = () => {
         </div>
         {menuOpen && (
           <motion.div
+          onBlur={()=>setMenuOpen(false)}
             transition={{
               duration: 0.8,
               ease: menuOpen ? "easeOut" : "easeIn",
