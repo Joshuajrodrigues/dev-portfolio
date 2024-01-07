@@ -82,6 +82,7 @@ export default function Home() {
           </span>
           <span className="flex mt-4">
             <a
+              aria-label="email me"
               className="flex"
               target="_blank"
               href="mailto:joshuarodriguesdev@gmail.com"
@@ -89,13 +90,14 @@ export default function Home() {
               <MailIcon className="mr-1 2xl:mr-8 2xl:scale-150" />
             </a>
             <a
+              aria-label="my linked in"
               className=""
               target="_blank"
               href="https://linkedin.com/in/joshua-rodrigues-1655091b2"
             >
               <Linkedin className="mr-1 2xl:mr-8  2xl:scale-150" />
             </a>
-            <a target="_blank" href="https://github.com/Joshuajrodrigues">
+            <a aria-label="my github" target="_blank" href="https://github.com/Joshuajrodrigues">
               <GithubIcon />
             </a>
           </span>
