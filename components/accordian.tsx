@@ -65,7 +65,9 @@ export default function Accordion({
       </button>
       <motion.div
         transition={{
-          duration:0.5
+          duration:0.8,
+          ease:showContent ? "easeOut" :"easeIn",
+          type:"spring"
         }}
         animate={{
           height:showContent ? "fit-content" :0
