@@ -9,7 +9,7 @@ export default function Tags({nostyle=false, children }: { nostyle?:boolean; chi
   }
   return (
     <div
-      className={`w-fit m-2 rounded-md border-1 border-black ${theme} px-3 py-1.5 text-sm font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:animate-wiggle`}
+      className={`w-fit m-2 2xl:text-xl rounded-md border-1 border-black ${theme} px-3 py-1.5 text-sm font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:animate-wiggle`}
     >
       {children}
     </div>
