@@ -18,7 +18,7 @@ const Projects = () => {
             projectDesp="A kitchen management web app to store kitchen stock, recipes, shopping list and allow family collaboration. Allows people to join a group and collaboarate privately."
             projectImage={
               <div className="w-full h-28 md:h-48  lg:h-56 2xl:h-80 relative">
-                <Image objectFit="cover" fill src={kuzinaImage} alt="Kuzina" />
+                <Image placeholder="blur" objectFit="cover" fill src={kuzinaImage} alt="Kuzina" />
               </div>
             }
             projectlink="/project/kuzina"
@@ -36,7 +36,7 @@ const Projects = () => {
             projectDesp="A cognitive behavioral therapy journaling app, for challenging negative thoughts and emotions. With froms for anger mangement, stress, goal building. Comes with PWA support."
             projectImage={
               <div className="w-full h-28 md:h-48  lg:h-56 2xl:h-80 relative">
-              <Image priority placeholder="blur" objectFit="cover" fill src={kognitiveImage} alt="Kognitive" />
+              <Image  placeholder="blur" objectFit="cover" fill src={kognitiveImage} alt="Kognitive" />
             </div>
             
             }
@@ -55,7 +55,7 @@ const Projects = () => {
             projectDesp="College final year project to use clustering algorithms (fuzzy c strange point) to segment eye image to cup and disk then calculate the cup to disk ratio for glaucoma detection."
             projectImage={
               <div className="w-full h-28 md:h-48  lg:h-56 2xl:h-80 relative">
-              <Image objectFit="cover" fill src={gla} alt="Glaucoma App" />
+              <Image placeholder="blur" objectFit="cover" fill src={gla} alt="Glaucoma App" />
             </div>
             
             }
@@ -76,7 +76,7 @@ const Projects = () => {
             projectImage={
               <Image
                 className="w-full h-28 md:h-48  lg:h-56  lg:w-full"
-                priority={true}
+                placeholder="blur"
                 src={kuzinaImage}
                 alt="kuzina"
               />
