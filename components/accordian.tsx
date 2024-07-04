@@ -1,11 +1,10 @@
 "use client";
 
-import { ReactNode, useEffect, useRef, useState } from "react";
-import { MinusSquare, PlusSquare } from "lucide-react";
 import { useTheme } from "@/store/theme";
-import { useProject } from "@/store/project";
-import { useParams, usePathname, useSearchParams } from "next/navigation";
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import { MinusSquare, PlusSquare } from "lucide-react";
+import { useParams } from "next/navigation";
+import { ReactNode, useEffect, useRef, useState } from "react";
 type Props = {
   open?: boolean;
   question: string;
@@ -22,13 +21,10 @@ export default function Accordion({
   hash,
 }: Props) {
   const [showContent, setShowContent] = useState(open);
-  const [contentHeight, setContentHeight] = useState("0px");
   const contentRef = useRef<HTMLDivElement>(null);
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
   const params = useParams();
   const theme = useTheme((s) => s.theme);
-  const changeProject = useProject((s) => s.changeProject);
+
   useEffect(() => {
     //  console.log("pathname", window.location.hash);
     if (window.location.hash === hash) {
