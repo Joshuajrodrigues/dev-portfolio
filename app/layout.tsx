@@ -22,10 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className + " " + "bg-amber-100"}>
         <Navbar />
-        <main className="  mt-16 flex flex-col items-center justify-center p-5 md:m-5 md:mt-20 lg:m-16 2xl:m-32 text-black">
+        <main className="  mt-16 flex flex-col items-center justify-center p-5 md:m-5 md:mt-20 lg:m-32 2xl:m-72 text-black">
           <Header />
           <section className="w-full flex justify-end">
-            <ColorPicker items={["Yellow",  "Green","Orange"]} />
+            <ColorPicker items={["Yellow", "Green", "Orange"]} />
           </section>
           {children}
           <SpeedInsights />

@@ -5,7 +5,7 @@ import { MinusSquare, PlusSquare } from "lucide-react";
 import { useTheme } from "@/store/theme";
 import { useProject } from "@/store/project";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 type Props = {
   open?: boolean;
   question: string;
@@ -38,7 +38,7 @@ export default function Accordion({
 
   return (
     <div
-      className={`w-full my-5   rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
+      className={`w-full my-5 rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
     >
       <button
         role="button"
@@ -65,12 +65,12 @@ export default function Accordion({
       </button>
       <motion.div
         transition={{
-          duration:0.8,
-          ease:showContent ? "easeOut" :"easeIn",
-          type:"spring"
+          duration: 0.8,
+          ease: showContent ? "easeOut" : "easeIn",
+          type: "spring"
         }}
         animate={{
-          height:showContent ? "fit-content" :0
+          height: showContent ? "fit-content" : 0
         }}
         ref={contentRef}
         className={`  overflow-hidden rounded-[5px]  bg-white font-bold `}
