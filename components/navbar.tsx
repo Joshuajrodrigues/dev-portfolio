@@ -19,7 +19,9 @@ const Navbar = () => {
   useEffect(() => {
     const checkIfAdmin = async () => {
       const { data, error } = await supabase.auth.getUser()
-      if (data) {
+      console.log("datadatadata", data);
+
+      if (data.user) {
 
         setisAdmin(true)
       } else {
@@ -85,6 +87,7 @@ const Navbar = () => {
             {
               isAdmin && <Button className="cursor-pointer rounded-md border-2 border-black 2xl:text-3xl  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none  bg-white w-18    mr-4 text-black p-1 text-sm flex justify-center items-center font-bold " ariaLabel='sign out' onClick={async () => {
                 await signOut()
+                setisAdmin(false)
               }}>Log out <LogOut className="ml-1" size={"16"} /> </Button>
             }
           </div>

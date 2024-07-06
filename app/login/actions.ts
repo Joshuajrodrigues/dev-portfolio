@@ -1,20 +1,20 @@
 'use server'
 
-import { revalidatePath } from 'next/cache'
+
 import { redirect } from 'next/navigation'
 
 import { createClient } from '@/utils/supabase/server'
 
 export async function signInWithGithub() {
 
-    console.log("cliked med 2");
+    const env = process.env.NODE_ENV
 
     const supabase = createClient()
 
     const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "github",
         options: {
-            redirectTo: `https://joshuarodrigues.dev/login/callback`,
+            redirectTo: env == "development" ? `http://localhost:3000/login/callback` : `https://joshuarodrigues.dev/login/callback`,
         },
     })
 

@@ -38,8 +38,7 @@ export async function updateSession(request: NextRequest) {
 
     if (
         !user &&
-        request.nextUrl.pathname.startsWith('/admin') &&
-        request.nextUrl.port !== '3000'
+        request.nextUrl.pathname.startsWith('/admin')
 
     ) {
         // no user, potentially respond by redirecting the user to the login page

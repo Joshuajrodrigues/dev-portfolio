@@ -11,6 +11,8 @@ const Page = () => {
             <div>Auth only</div>
             {/* <Tiptap /> */}
             <Link href={'/create-new'} >New post</Link>
+
+
         </>
     )
 }
