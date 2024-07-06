@@ -11,7 +11,7 @@ const page = () => {
 
                 console.log("clicked");
 
-                await signInWithGithub()
+                await signInWithGithub(window.location.origin)
             }} >Login</Button>
 
 

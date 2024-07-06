@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation'
 
 import { createClient } from '@/utils/supabase/server'
 
-export async function signInWithGithub() {
+export async function signInWithGithub(loc: string) {
 
     const env = process.env.NODE_ENV
 
@@ -14,7 +14,7 @@ export async function signInWithGithub() {
     const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "github",
         options: {
-            redirectTo: `${window.location.origin}/login/callback`,
+            redirectTo: `${loc}/login/callback`,
         },
     })
 
