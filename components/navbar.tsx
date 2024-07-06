@@ -1,18 +1,37 @@
 "use client";
 
-import { Download, MailIcon, PanelTopClose, PanelTopOpen } from "lucide-react";
+import { Download, LogOut, MailIcon, PanelTopClose, PanelTopOpen } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "./button";
 import SmallResume from "./smallResume";
 import { motion } from "framer-motion";
+import { createClient } from "@/utils/supabase/client";
+import { signOut } from "@/app/login/actions";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
-  
+  const supabase = createClient()
+  const [isAdmin, setisAdmin] = useState(false)
+
+
+  useEffect(() => {
+    const checkIfAdmin = async () => {
+      const { data, error } = await supabase.auth.getUser()
+      if (data) {
+
+        setisAdmin(true)
+      } else {
+        setisAdmin(false)
+      }
+    }
+    checkIfAdmin()
+  }, [])
+
+
   return (
-    <div  className=" bg-amber-100 shadow-black shadow-sm fixed w-full top-0 z-10 2xl:text-4xl ">
+    <div className=" bg-amber-100 shadow-black shadow-sm fixed w-full top-0 z-10 2xl:text-4xl ">
       <div className=" mx-auto px-4 2xl:pl-8">
         <div className="flex items-center justify-between py-4">
           <div className="font-bold ">
@@ -63,6 +82,11 @@ const Navbar = () => {
               Email me <MailIcon size={12} className="ml-1 2xl:mx-3 2xl:scale-150" />
             </a>
             <SmallResume />
+            {
+              isAdmin && <Button className="cursor-pointer rounded-md border-2 border-black 2xl:text-3xl  px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none  bg-white w-18    mr-4 text-black p-1 text-sm flex justify-center items-center font-bold " ariaLabel='sign out' onClick={async () => {
+                await signOut()
+              }}>Log out <LogOut className="ml-1" size={"16"} /> </Button>
+            }
           </div>
 
           <button
@@ -75,7 +99,7 @@ const Navbar = () => {
         </div>
         {menuOpen && (
           <motion.div
-          onBlur={()=>setMenuOpen(false)}
+            onBlur={() => setMenuOpen(false)}
             transition={{
               duration: 0.8,
               ease: menuOpen ? "easeOut" : "easeIn",

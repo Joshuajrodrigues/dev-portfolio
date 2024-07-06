@@ -16,9 +16,9 @@ export default function AdminLayout({
 }) {
     return (
         <>
-            <div className="mt-16 flex flex-col items-center justify-center p-5 md:m-5 md:mt-20 lg:m-32 2xl:m-72 text-black">
-                {children}
-            </div>
+
+            {children}
+
         </>
     );
 }
