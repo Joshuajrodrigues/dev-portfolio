@@ -31,13 +31,15 @@ export async function updateSession(request: NextRequest) {
     // supabase.auth.getUser(). A simple mistake could make it very hard to debug
     // issues with users being randomly logged out.
 
+
     const {
         data: { user },
     } = await supabase.auth.getUser()
 
     if (
         !user &&
-        request.nextUrl.pathname.startsWith('/admin')
+        request.nextUrl.pathname.startsWith('/admin') &&
+        request.nextUrl.port !== '3000'
 
     ) {
         // no user, potentially respond by redirecting the user to the login page

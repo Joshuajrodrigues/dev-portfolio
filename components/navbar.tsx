@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
+  
   return (
     <div  className=" bg-amber-100 shadow-black shadow-sm fixed w-full top-0 z-10 2xl:text-4xl ">
       <div className=" mx-auto px-4 2xl:pl-8">
